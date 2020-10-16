@@ -4,7 +4,7 @@ set -e
 
 git add -A
 
-git commit -m 'ie11图片丢失'
+git commit -m 'try web components'
 
 git push  https://github.com/TCT-FontDev/TianshuProject.git master:master
 
