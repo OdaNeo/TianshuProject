@@ -1,0 +1,351 @@
+@import 'common/index';
+
+#ts_main_devcenter {
+    width: 100%;
+
+    // 数据中台
+    .section-devcenter {
+        width: 100%;
+        height: 600px;
+        background: #091C7A;
+        position: relative;
+
+        .devcenter_title {
+            position: absolute;
+            height: 60px;
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 60px;
+            color: #FFFFFF;
+            letter-spacing: 6px;
+            top: 227px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .devcenter_search {
+            width: 864px;
+            height: 48px;
+            border: 1PX solid #FFFFFF;
+            border-radius: 7px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 325px;
+            overflow: hidden;
+
+            input {
+                background-color: #091C7A;
+                border: none;
+                outline: none;
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                line-height: 48px;
+                color: #FFFFFF;
+                vertical-align: top;
+                text-align: center;
+
+                &:focus {
+                    border: none;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: #FFFFFF;
+                }
+
+                &:-moz-placeholder {
+                    color: #FFFFFF;
+                }
+
+                &::-moz-placeholder {
+                    color: #FFFFFF;
+                }
+            }
+
+            #search_icon {
+                position: absolute;
+                width: 28px;
+                height: 28px;
+                background: url('@/assets/img/devcenter/z935.svg') no-repeat center center;
+                background-size: 100% 100%;
+                right: 17px;
+                top: 8px;
+            }
+        }
+    }
+
+    .section_kuaisurs {
+        width: 100%;
+        height: 480px;
+        background: #FFFFFF;
+        position: relative;
+
+        .kuaisurs_title {
+            position: absolute;
+            height: 36px;
+            font-size: 36px;
+            line-height: 36px;
+            color: #101426;
+            letter-spacing: 1px;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:after {
+                title_after();
+            }
+        }
+
+        .kuaisurs_item {
+            position: absolute;
+            width: 1270px;
+            height: 256px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 170px;
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                height: 100%;
+                width: 260px;
+            }
+
+            .item_1 {
+                position: relative;
+
+                #icon_item_1 {
+                    position: absolute;
+                    left: 63px;
+                    width: 136px;
+                    height: 87px;
+                    background: url('@/assets/img/devcenter/z938.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                .title {
+                    position: absolute;
+                    left: 80px;
+                    top: 128px;
+                    height: 24px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                }
+
+                .detail {
+                    position: absolute;
+                    left: 1px;
+                    top: 185px;
+                    width: 260px;
+                    height: 70px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+            }
+
+            .item_2 {
+                position: relative;
+
+                #icon_item_2 {
+                    position: absolute;
+                    left: 74px;
+                    width: 114px;
+                    height: 88px;
+                    background: url('@/assets/img/devcenter/z944.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                .title {
+                    position: absolute;
+                    left: 80px;
+                    top: 128px;
+                    height: 24px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                }
+
+                .detail {
+                    position: absolute;
+                    left: 1px;
+                    top: 185px;
+                    width: 260px;
+                    height: 70px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+            }
+
+            .item_3 {
+                position: relative;
+
+                #icon_item_3 {
+                    position: absolute;
+                    left: 80px;
+                    top: -4px;
+                    width: 103px;
+                    height: 101px;
+                    background: url('@/assets/img/devcenter/z941.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                .title {
+                    position: absolute;
+                    left: 80px;
+                    top: 128px;
+                    height: 24px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                }
+
+                .detail {
+                    position: absolute;
+                    left: 1px;
+                    top: 185px;
+                    width: 260px;
+                    height: 70px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .section_kaifazy {
+        width: 100%;
+        height: 560px;
+        background: #F4F4F4;
+        position: relative;
+
+        .kaifazy_title {
+            position: absolute;
+            height: 36px;
+            font-size: 36px;
+            line-height: 36px;
+            color: #101426;
+            letter-spacing: 1px;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:after {
+                title_after();
+            }
+        }
+
+        .kaifazy_center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 159px;
+            width: 180px;
+            height: 48px;
+            border: 1PX solid #101426;
+            font-size: 20px;
+            line-height: 48px;
+            text-indent: 34px;
+            color: #101426;
+            letter-spacing: 1px;
+        }
+
+        .kaifazy_item {
+            position: absolute;
+            width: 1150px;
+            height: 158px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 292px;
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                height: 100%;
+                width: 155px;
+            }
+
+            .item_1 {
+                position: relative;
+
+                #icon_item_4 {
+                    position: absolute;
+                    width: 124px;
+                    height: 94px;
+                    left: 9px;
+                    background: url('@/assets/img/devcenter/z947.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                .title {
+                    position: absolute;
+                    bottom: 0px;
+                    height: 24px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .item_2 {
+                position: relative;
+
+                #icon_item_5 {
+                    position: absolute;
+                    width: 124px;
+                    height: 94px;
+                    left: 9px;
+                    background: url('@/assets/img/devcenter/z947.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                .title {
+                    position: absolute;
+                    bottom: 0px;
+                    height: 24px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .item_3 {
+                position: relative;
+
+                #icon_item_6 {
+                    position: absolute;
+                    width: 124px;
+                    height: 94px;
+                    left: 9px;
+                    background: url('@/assets/img/devcenter/z947.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                .title {
+                    position: absolute;
+                    bottom: 0px;
+                    height: 24px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

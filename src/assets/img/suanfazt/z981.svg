@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #d8d8d8;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #070203;
+        stroke-linecap: round;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_981" data-name="组 981" transform="translate(-938 -3042)">
+    <g id="矩形_31" data-name="矩形 31" class="cls-1" transform="translate(938 3042)">
+      <rect class="cls-4" width="80" height="80" rx="19"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="79" height="79" rx="18.5"/>
+    </g>
+    <g id="组_103" data-name="组 103" transform="translate(586.862 2700.638)">
+      <path id="路径_81" data-name="路径 81" class="cls-2" d="M401.713,386.288v9.8a1.34,1.34,0,0,1-1.341,1.341H376.479a1.34,1.34,0,0,1-1.341-1.341V364.677a1.34,1.34,0,0,1,1.341-1.341h23.894a1.34,1.34,0,0,1,1.341,1.341V373" transform="translate(0 0)"/>
+      <path id="路径_82" data-name="路径 82" class="cls-3" d="M388.8,371.011v11.551l-5.318-5.662Z" transform="translate(3.988 3.668)"/>
+      <line id="直线_73" data-name="直线 73" class="cls-3" x2="15.469" transform="translate(392.788 380.383)"/>
+    </g>
+  </g>
+</svg>

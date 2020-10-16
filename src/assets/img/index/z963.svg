@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #36f;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="组_963" data-name="组 963" transform="translate(-1106 -258)">
+    <circle id="椭圆_112" data-name="椭圆 112" class="cls-1" cx="33.5" cy="33.5" r="33.5" transform="translate(1106 258)"/>
+    <g id="组_452" data-name="组 452" transform="translate(5091.25 -902)">
+      <path id="减去_4" data-name="减去 4" class="cls-2" d="M31,9H1A1,1,0,0,1,0,8V1A1,1,0,0,1,1,0H31a1,1,0,0,1,1,1V8A1,1,0,0,1,31,9ZM3.047,3V6h6.1V3Z" transform="translate(-3968.25 1179)"/>
+      <path id="减去_5" data-name="减去 5" class="cls-2" d="M31,9H1A1,1,0,0,1,0,8V1A1,1,0,0,1,1,0H31a1,1,0,0,1,1,1V8A1,1,0,0,1,31,9ZM3.047,3V6h6.1V3Z" transform="translate(-3968.25 1189)"/>
+      <path id="减去_6" data-name="减去 6" class="cls-2" d="M31,9H1A1,1,0,0,1,0,8V1A1,1,0,0,1,1,0H31a1,1,0,0,1,1,1V8A1,1,0,0,1,31,9ZM3.047,3V6h6.1V3Z" transform="translate(-3968.25 1199)"/>
+    </g>
+  </g>
+</svg>

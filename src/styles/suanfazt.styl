@@ -1,0 +1,654 @@
+@import 'common/index';
+
+#ts_main_suanfazt {
+    width: 100%;
+
+    // 算法中台
+    .section_suanfa {
+        width: 100%;
+        height: 600px;
+        color: #ffffff;
+        background: url('@/assets/img/suanfazt/suanfaztDYHx6h3l.jpg') no-repeat center center;
+        background-size: 100% 100%;
+        position: relative;
+
+        &:before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 600px;
+            background-color: rgba(9, 28, 122, 0.61);
+        }
+
+        h3 {
+            height: 60px;
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 60px;
+            height: 60px;
+            letter-spacing: 4px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 207px;
+        }
+
+        h5 {
+            height: 21px;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 1px;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 281px;
+        }
+
+        .suanfa_detail {
+            width: 733px;
+            position: absolute;
+            top: 361px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+
+            .suanfa_detail_item {
+                position: relative;
+                text-align: center;
+                letter-spacing: 2px;
+                height: 20px;
+                font-size: 20px;
+
+                &:after {
+                    content: ' ';
+                    height: 23px;
+                    width: 4px;
+                    background-color: #ffffff;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 44px;
+                }
+            }
+        }
+    }
+
+    // itemlist
+    .section_item {
+        width: 100%;
+        height: 436px;
+        position: relative;
+        background: #FFFFFF;
+
+        .item_content {
+            width: 1260px;
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+
+            .item_content_item {
+                height: 246px;
+                width: 260px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                i {
+                    height: 88px;
+                    width: 88px;
+                    margin-bottom: 18px;
+                }
+
+                h4 {
+                    height: 24px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                }
+
+                p {
+                    height: 70px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    padding-top: 6px;
+                }
+
+                #icon_item_1 {
+                    background: url('@/assets/img/suanfazt/z974.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                #icon_item_2 {
+                    background: url('@/assets/img/suanfazt/z972.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                #icon_item_3 {
+                    background: url('@/assets/img/suanfazt/z973.svg') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+
+    // 充分发挥数据潜力 AI中台
+    .section_aizt {
+        width: 100%;
+        height: 680px;
+        background: #f4f4f4;
+        position: relative;
+
+        .section_aizt_title {
+            position: absolute;
+            height: 36px;
+            font-size: 36px;
+            letter-spacing: 2.5px;
+            color: #101426;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:after {
+                title_after();
+            }
+        }
+
+        .section_aizt_suanfazt {
+            width: 730px;
+            height: 456px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url('@/assets/img/suanfazt/z1022.png') no-repeat center center;
+            background-size: 100% 100%;
+
+            h3 {
+                height: 23px;
+                font-size: 23px;
+                font-weight: bold;
+                color: #101426;
+                position: absolute;
+                top: 43px;
+                left: 333px;
+            }
+
+            h5 {
+                position: absolute;
+                height: 15px;
+                font-size: 15px;
+                line-height: 15px;
+                color: #101426;
+            }
+
+            .exp1 {
+                bottom: 42px;
+                left: 75px;
+            }
+
+            .exp2 {
+                bottom: 168px;
+                left: 174px;
+            }
+
+            .exp3 {
+                bottom: 222px;
+                left: 339px;
+            }
+
+            .exp4 {
+                bottom: 168px;
+                left: 503px;
+            }
+
+            .exp5 {
+                bottom: 42px;
+                left: 593px;
+            }
+        }
+    }
+
+    // 微服务
+    .section_wfw {
+        width: 100%;
+        height: 1000px;
+        background: #FFFFFF;
+        position: relative;
+
+        .section_wfw_title {
+            height: 36px;
+            font-size: 35px;
+            line-height: 36px;
+            color: #101426;
+            letter-spacing: 3px;
+            text-indent: 10px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80px;
+
+            &:after {
+                title_after();
+            }
+        }
+
+        .section_wfw_content {
+            width: 1368px;
+            position: absolute;
+            top: 217px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .content_qtywxq {
+                text-align: center;
+                position: relative;
+                letter-spacing: 1px;
+                margin: 0 auto;
+                width: 230px;
+                box-sizing: border-box;
+                border-left: 3PX solid #999999;
+                border-right: 3PX solid #999999;
+                height: 24px;
+                line-height: 24px;
+                font-size: 24px;
+                color: #666666;
+
+                &:before {
+                    suanfazt_section_wfw_content_before(569px);
+                }
+
+                &:after {
+                    suanfazt_section_wfw_content_after(569px);
+                }
+            }
+
+            .content_ywlj {
+                top: 81px;
+                width: 543px;
+                height: 185px;
+                position: absolute;
+
+                .content_list_ywlj {
+                    position: absolute;
+                    left: 10px;
+                    width: 516px;
+                    height: 122px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .content_item_list_ywlj {
+                        i {
+                            content_item_list_i();
+                        }
+
+                        p {
+                            content_item_list_p();
+                        }
+
+                        #icon_ywlj_1 {
+                            background: url('@/assets/img/suanfazt/z991.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_ywlj_2 {
+                            background: url('@/assets/img/suanfazt/z992.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_ywlj_3 {
+                            background: url('@/assets/img/suanfazt/z993.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_ywlj_4 {
+                            background: url('@/assets/img/suanfazt/z994.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+
+                .ywlj_text {
+                    text-align: center;
+                    position: absolute;
+                    letter-spacing: 2px;
+                    width: 173px;
+                    box-sizing: border-box;
+                    border-left: 3PX solid #999999;
+                    border-right: 3PX solid #999999;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 24px;
+                    color: #666666;
+                    left: 185px;
+                    top: 160px;
+
+                    &:before {
+                        suanfazt_section_wfw_content_before(185px);
+                    }
+
+                    &:after {
+                        suanfazt_section_wfw_content_after(185px);
+                    }
+                }
+            }
+
+            .content_sjcl {
+                top: 81px;
+                left: 568px;
+                width: 565px;
+                height: 185px;
+                position: absolute;
+
+                .content_list_sjcl {
+                    position: absolute;
+                    left: 25px;
+                    width: 528px;
+                    height: 122px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .content_item_list_sjcl {
+                        i {
+                            content_item_list_i();
+                        }
+
+                        p {
+                            content_item_list_p();
+                        }
+
+                        #icon_sjcl_1 {
+                            background: url('@/assets/img/suanfazt/z995.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_sjcl_2 {
+                            background: url('@/assets/img/suanfazt/z996.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_sjcl_3 {
+                            background: url('@/assets/img/suanfazt/z997.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_sjcl_4 {
+                            background: url('@/assets/img/suanfazt/z998.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+
+                .sjcl_text {
+                    text-align: center;
+                    position: absolute;
+                    letter-spacing: 2px;
+                    width: 195px;
+                    box-sizing: border-box;
+                    border-left: 3PX solid #999999;
+                    border-right: 3PX solid #999999;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 24px;
+                    color: #666666;
+                    left: 185px;
+                    top: 160px;
+
+                    &:before {
+                        suanfazt_section_wfw_content_before(185px);
+                    }
+
+                    &:after {
+                        suanfazt_section_wfw_content_after(185px);
+                    }
+                }
+            }
+
+            .content_mxxx {
+                top: 335px;
+                width: 543px;
+                position: absolute;
+
+                .content_list_mxxx {
+                    position: absolute;
+                    left: 40px;
+                    width: 450px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-content: center;
+
+                    .content_item_list_mxxx {
+                        width: 33%;
+                        margin-bottom: 53px;
+
+                        i {
+                            content_item_list_i();
+                        }
+
+                        p {
+                            content_item_list_p();
+                        }
+
+                        #icon_mxxx_1 {
+                            background: url('@/assets/img/suanfazt/z988.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_mxxx_2 {
+                            background: url('@/assets/img/suanfazt/z989.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_mxxx_3 {
+                            background: url('@/assets/img/suanfazt/z990.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_mxxx_4 {
+                            background: url('@/assets/img/suanfazt/z987.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_mxxx_5 {
+                            background: url('@/assets/img/suanfazt/z986.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_mxxx_6 {
+                            background: url('@/assets/img/suanfazt/z985.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+
+                .mxxx_text {
+                    text-align: center;
+                    position: absolute;
+                    letter-spacing: 2px;
+                    box-sizing: border-box;
+                    border-left: 3PX solid #999999;
+                    border-right: 3PX solid #999999;
+                    width: 150px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 24px;
+                    color: #666666;
+                    left: 187px;
+                    top: 330px;
+
+                    &:before {
+                        suanfazt_section_wfw_content_before(185px);
+                    }
+
+                    &:after {
+                        suanfazt_section_wfw_content_after(185px);
+                    }
+                }
+            }
+
+            .content_yxjk {
+                top: 335px;
+                left: 591px;
+                width: 543px;
+                position: absolute;
+
+                .content_list_yxjk {
+                    position: absolute;
+                    left: 35px;
+                    width: 450px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    align-content: center;
+
+                    .content_item_list_yxjk {
+                        width: 33%;
+                        margin-bottom: 50px;
+
+                        i {
+                            content_item_list_i();
+                        }
+
+                        p {
+                            content_item_list_p();
+                        }
+
+                        #icon_yxjk_1 {
+                            background: url('@/assets/img/suanfazt/z982.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_yxjk_2 {
+                            background: url('@/assets/img/suanfazt/z983.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_yxjk_3 {
+                            background: url('@/assets/img/suanfazt/z984.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_yxjk_4 {
+                            background: url('@/assets/img/suanfazt/z981.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_yxjk_5 {
+                            background: url('@/assets/img/suanfazt/z980.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_yxjk_6 {
+                            background: url('@/assets/img/suanfazt/z979.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+
+                .yxjk_text {
+                    width: 145px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 24px;
+                    color: #666666;
+                    text-align: center;
+                    letter-spacing: 2px;
+                    box-sizing: border-box;
+                    border-left: 3PX solid #999999;
+                    border-right: 3PX solid #999999;
+                    position: absolute;
+                    left: 187px;
+                    top: 330px;
+
+                    &:before {
+                        suanfazt_section_wfw_content_before(185px);
+                    }
+
+                    &:after {
+                        suanfazt_section_wfw_content_after(185px);
+                    }
+                }
+            }
+
+            .content_ztgl {
+                top: 81px;
+                right: 0;
+                width: 200px;
+                position: absolute;
+
+                .content_list_ztgl {
+                    width: 100%;
+                    height: 555px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-content: center;
+
+                    .content_item_list_ztgl {
+                        i {
+                            content_item_list_i();
+                        }
+
+                        p {
+                            content_item_list_p();
+                            margin-top: 10px;
+                        }
+
+                        #icon_ztgl_1 {
+                            background: url('@/assets/img/suanfazt/z975.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_ztgl_2 {
+                            background: url('@/assets/img/suanfazt/z976.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_ztgl_3 {
+                            background: url('@/assets/img/suanfazt/z977.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+
+                        #icon_ztgl_4 {
+                            background: url('@/assets/img/suanfazt/z978.svg') no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+
+                .ztgl_text {
+                    text-align: center;
+                    position: absolute;
+                    letter-spacing: 2px;
+                    box-sizing: border-box;
+                    border-left: 3PX solid #999999;
+                    border-right: 3PX solid #999999;
+                    width: 145px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 24px;
+                    color: #666666;
+                    left: 27px;
+                    top: 583px;
+
+                    &:before {
+                        suanfazt_section_wfw_content_before(27px);
+                    }
+
+                    &:after {
+                        suanfazt_section_wfw_content_after(27px);
+                    }
+                }
+            }
+        }
+    }
+}

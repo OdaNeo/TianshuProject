@@ -1,0 +1,426 @@
+@import 'common/index';
+
+#ts_main_shuzils {
+    width: 100%;
+
+    // 数字孪生
+    .section_shuzils {
+        width: 100%;
+        height: 600px;
+        color: #FFFFFF;
+        background: url('@/assets/img/shuzils/shuzilsDYHx6h.jpg') no-repeat center center;
+        background-size: 100% 100%;
+        position: relative;
+
+        &:before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 600px;
+            background-color: rgba(9, 28, 122, 0.6);
+        }
+
+        h3 {
+            position: absolute;
+            height: 60px;
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 60px;
+            letter-spacing: 4.5px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 226px;
+        }
+
+        h4 {
+            position: absolute;
+            height: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 346px;
+        }
+
+        h5 {
+            position: absolute;
+            height: 21px;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 300px;
+        }
+
+        a {
+            position: absolute;
+            width: 182px;
+            height: 48px;
+            font-size: 18px;
+            line-height: 48px;
+            text-align: center;
+            border: 1PX solid #FFFFFF;
+            border-radius: 6px;
+            box-sizing: border-box;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 468px;
+        }
+    }
+
+    // 从设计到维护全流程数字化
+    .section_shuzih {
+        width: 100%;
+        height: 860px;
+        background: #FFFFFF;
+        position: relative;
+
+        .section_shuzih_title {
+            position: absolute;
+            height: 36px;
+            font-size: 36px;
+            line-height: 36px;
+            letter-spacing: 1.5px;
+            text-align: center;
+            color: #101426;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80px;
+
+            &:after {
+                title_after();
+            }
+        }
+
+        .item_list_top {
+            position: absolute;
+            top: 216px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1260px;
+            height: 228px;
+            z-index: 3;
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                height: 100%;
+                width: 223px;
+                position: relative;
+
+                .item_title {
+                    width: 100%;
+                    height: 18px;
+                    font-size: 18px;
+                    color: #101426;
+                    line-height: 18px;
+                    letter-spacing: 1px;
+                }
+
+                .item_exp {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 40px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #666666;
+                    letter-spacing: 1px;
+                    top: 38px;
+                }
+
+                .item_img {
+                    position: absolute;
+                    width: 100%;
+                    height: 130px;
+                    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                    border-radius: 10px;
+                    background-color: gray;
+                    bottom: 0px;
+                }
+
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 0 10px 17px;
+                    border-color: transparent transparent #3366FF;
+                    left: 50%;
+                    transform: translate(-50%);
+                    bottom: -38px;
+                }
+
+                &:after {
+                    content: ' ';
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    background: #3366FF;
+                    border: 6px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    bottom: -65px;
+                }
+
+                .shuzih_img_1 {
+                    background: url('@/assets/img/shuzils/z523.png') no-repeat center center;
+                    background-size: 108% 114%;
+                }
+
+                .shuzih_img_2 {
+                    background: url('@/assets/img/shuzils/z522.png') no-repeat center center;
+                    background-size: 108% 114%;
+                }
+
+                .shuzih_img_3 {
+                    background: url('@/assets/img/shuzils/mbz446.png') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+
+        .item_list_center {
+            width: 1545px;
+            height: 10px;
+            background: #3366FF;
+            position: absolute;
+            top: 491px;
+            left: 239px;
+
+            &:before {
+                content: ' ';
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-width: 10px 17px 10px 17px;
+                border-color: transparent transparent transparent #3366FF;
+                right: -33px;
+                top: -5px;
+            }
+
+            .item {
+                width: 126px;
+                height: 40px;
+                line-height: 40px;
+                background: #3366FF;
+                border-radius: 20px;
+                font-size: 20px;
+                color: #FFFFFF;
+                text-align: center;
+
+                &:after {
+                    content: ' ';
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    background: #3366FF;
+                    border: 6px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    top: -39px;
+                }
+            }
+
+            .item_right {
+                position: absolute;
+                right: 36px;
+                top: 32px;
+            }
+
+            .item_left {
+                position: absolute;
+                left: -63px;
+                top: 32px;
+            }
+        }
+
+        .item_list_bottom {
+            position: absolute;
+            top: 549px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 742px;
+            height: 236px;
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                height: 100%;
+                width: 223px;
+                position: relative;
+
+                .item_img {
+                    width: 100%;
+                    height: 130px;
+                    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                    border-radius: 10px;
+                    background-color: gray;
+                }
+
+                .item_title {
+                    width: 100%;
+                    height: 18px;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #101426;
+                    letter-spacing: 1px;
+                    margin-top: 27px;
+                }
+
+                .item_exp {
+                    display: block;
+                    width: 100%;
+                    height: 48px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #666666;
+                    letter-spacing: 1px;
+                    margin-top: 15px;
+                }
+
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 17px 10px 0;
+                    border-color: #3366FF transparent transparent;
+                    left: 50%;
+                    transform: translate(-50%);
+                    top: -37px;
+                }
+
+                &:after {
+                    content: ' ';
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    background: #3366FF;
+                    border: 6px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    top: -64px;
+                }
+
+                .shuzih_img_4 {
+                    background: url('@/assets/img/shuzils/mbz447.png') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+
+                .shuzih_img_5 {
+                    background: url('@/assets/img/shuzils/mbz448.png') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+
+    // 三维重建
+    .section_sanweicj {
+        width: 100%;
+        height: 720px;
+        background: #F4F4F4;
+        position: relative;
+
+        .section_sanweicj_title {
+            position: absolute;
+            width: 150px;
+            height: 36px;
+            font-size: 36px;
+            line-height: 36px;
+            color: #101426;
+            letter-spacing: 1px;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:after {
+                title_after();
+            }
+        }
+
+        .section_sanweicj_item_list {
+            width: 1200px;
+            height: 496px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .item {
+                width: 33.3%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .item_3D {
+                    width: 240px;
+                    height: 150px;
+                    background: #E2E2E2;
+                    border-radius: 10px;
+                }
+
+                .item_exp {
+                    height: 18px;
+                    font-size: 18px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #101426;
+                    letter-spacing: 1.5px;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+
+    // 评估预测方案生成
+    .section_pingguyc {
+        width: 100%;
+        height: 840px;
+        background: #FFFFFF;
+        position: relative;
+
+        .section_pingguyc_title {
+            width: 376px;
+            height: 36px;
+            font-size: 36px;
+            line-height: 36px;
+            letter-spacing: 1.5px;
+            color: #101426;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80px;
+            position: absolute;
+
+            &:after {
+                title_after();
+            }
+        }
+
+        .section_pingguyc_video {
+            width: 1000px;
+            height: 565.5px;
+            position: absolute;
+            top: 197px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(226, 226, 226, 1);
+        }
+    }
+}

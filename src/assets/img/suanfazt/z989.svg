@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #e2e2e2;
+      }
+
+      .cls-2 {
+        stroke: #333;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_989" data-name="组 989" transform="translate(-502 -2872)">
+    <g id="矩形_31" data-name="矩形 31" class="cls-1" transform="translate(502 2872)">
+      <rect class="cls-3" width="80" height="80" rx="19"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="79" height="79" rx="18.5"/>
+    </g>
+    <g id="组_91" data-name="组 91" transform="translate(386.688 2594.109)">
+      <path id="路径_64" data-name="路径 64" class="cls-2" d="M140.425,336.726h29.143a2.11,2.11,0,0,0,1.787-3.231L159.719,314.94a2.119,2.119,0,0,1-.322-1.121V301.606a2.11,2.11,0,0,0-2.11-2.11h-5.229a2.11,2.11,0,0,0-2.11,2.11v12.241a2.115,2.115,0,0,1-.3,1.077l-11.043,18.616A2.111,2.111,0,0,0,140.425,336.726Z" transform="translate(0 0)"/>
+      <line id="直线_46" data-name="直线 46" class="cls-2" x2="25.733" transform="translate(142.094 327.666)"/>
+      <ellipse id="椭圆_37" data-name="椭圆 37" class="cls-2" cx="1.087" cy="0.992" rx="1.087" ry="0.992" transform="translate(152.657 313.512)"/>
+      <ellipse id="椭圆_38" data-name="椭圆 38" class="cls-2" cx="1.087" cy="0.992" rx="1.087" ry="0.992" transform="translate(156.274 318.41)"/>
+      <ellipse id="椭圆_39" data-name="椭圆 39" class="cls-2" cx="1.816" cy="1.481" rx="1.816" ry="1.481" transform="translate(150.841 320.899)"/>
+    </g>
+  </g>
+</svg>

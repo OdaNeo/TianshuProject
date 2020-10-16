@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #e2e2e2;
+      }
+
+      .cls-2 {
+        stroke: #333;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_991" data-name="组 991" transform="translate(-317 -2617)">
+    <g id="矩形_31" data-name="矩形 31" class="cls-1" transform="translate(317 2617)">
+      <rect class="cls-3" width="80" height="80" rx="19"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="79" height="79" rx="18.5"/>
+    </g>
+    <g id="组_82" data-name="组 82" transform="translate(304.386 2453.288)">
+      <path id="路径_45" data-name="路径 45" class="cls-2" d="M71.138,198.606v-2.657a1.352,1.352,0,0,0-1.352-1.352H52.2a1.353,1.353,0,0,1-1.352-1.352v-4.278a1.352,1.352,0,0,0-1.352-1.352H36.851a1.352,1.352,0,0,0-1.352,1.352v32.827a1.353,1.353,0,0,0,1.352,1.353H40.13" transform="translate(0)"/>
+      <rect id="矩形_58" data-name="矩形 58" class="cls-2" width="27.69" height="22.191" rx="1.016" transform="translate(43.449 200.957)"/>
+      <rect id="矩形_59" data-name="矩形 59" class="cls-2" width="9.955" height="5.046" rx="0.978" transform="translate(56.307 210.773)"/>
+    </g>
+  </g>
+</svg>

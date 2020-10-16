@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #3b4045;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_1003" data-name="组 1003" transform="translate(-1421 -680)">
+    <g id="椭圆_25" data-name="椭圆 25" class="cls-1" transform="translate(1509 680) rotate(90)">
+      <circle class="cls-3" cx="44" cy="44" r="44"/>
+      <circle class="cls-4" cx="44" cy="44" r="43"/>
+    </g>
+    <g id="组_120" data-name="组 120" transform="translate(-70.289 207.359)">
+      <circle id="椭圆_76" data-name="椭圆 76" class="cls-2" cx="2.322" cy="2.322" r="2.322" transform="translate(1532.272 493.128)"/>
+      <circle id="椭圆_77" data-name="椭圆 77" class="cls-2" cx="2.322" cy="2.322" r="2.322" transform="translate(1532.272 536.447)"/>
+      <circle id="椭圆_78" data-name="椭圆 78" class="cls-2" cx="7" cy="7" r="7" transform="translate(1528 510.109)"/>
+      <circle id="椭圆_79" data-name="椭圆 79" class="cls-2" cx="13.817" cy="13.817" r="13.817" transform="translate(1521.183 503.292)"/>
+      <path id="路径_106" data-name="路径 106" class="cls-2" d="M1541.326,495.983a21.662,21.662,0,0,1,11.089,38.9" transform="translate(-4.41 -0.45)"/>
+      <path id="路径_107" data-name="路径 107" class="cls-2" d="M1532.279,539.845A21.663,21.663,0,0,1,1522,501.032" transform="translate(0 -1.246)"/>
+      <line id="直线_88" data-name="直线 88" class="cls-2" x2="10.366" transform="translate(1542 517.109)"/>
+      <line id="直线_89" data-name="直线 89" class="cls-2" x2="10.366" transform="translate(1517.627 517.109)"/>
+      <line id="直线_90" data-name="直线 90" class="cls-2" y1="10.366" transform="translate(1534.996 499.74)"/>
+      <line id="直线_91" data-name="直线 91" class="cls-2" y1="10.366" transform="translate(1534.996 524.113)"/>
+    </g>
+  </g>
+</svg>

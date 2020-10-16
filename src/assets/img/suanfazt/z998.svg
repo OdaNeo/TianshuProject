@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #e2e2e2;
+      }
+
+      .cls-2 {
+        stroke: #333;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_998" data-name="组 998" transform="translate(-1288 -2617)">
+    <g id="矩形_31" data-name="矩形 31" class="cls-1" transform="translate(1288 2617)">
+      <rect class="cls-3" width="80" height="80" rx="19"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="79" height="79" rx="18.5"/>
+    </g>
+    <g id="组_50" data-name="组 50" transform="translate(212.082 214.375)">
+      <g id="椭圆_18" data-name="椭圆 18" class="cls-2" transform="translate(1114.918 2421.625)">
+        <circle class="cls-3" cx="6.5" cy="6.5" r="6.5"/>
+        <circle class="cls-4" cx="6.5" cy="6.5" r="6"/>
+      </g>
+      <g id="椭圆_19" data-name="椭圆 19" class="cls-2" transform="translate(1128.918 2436.625)">
+        <circle class="cls-3" cx="5" cy="5" r="5"/>
+        <circle class="cls-4" cx="5" cy="5" r="4.5"/>
+      </g>
+      <g id="椭圆_20" data-name="椭圆 20" class="cls-2" transform="translate(1122.918 2454.625)">
+        <circle class="cls-3" cx="4" cy="4" r="4"/>
+        <circle class="cls-4" cx="4" cy="4" r="3.5"/>
+      </g>
+      <g id="椭圆_21" data-name="椭圆 21" class="cls-2" transform="translate(1100.918 2456.625)">
+        <circle class="cls-3" cx="5" cy="5" r="5"/>
+        <circle class="cls-4" cx="5" cy="5" r="4.5"/>
+      </g>
+      <g id="椭圆_22" data-name="椭圆 22" class="cls-2" transform="translate(1096.918 2430.625)">
+        <circle class="cls-3" cx="5" cy="5" r="5"/>
+        <circle class="cls-4" cx="5" cy="5" r="4.5"/>
+      </g>
+      <g id="椭圆_23" data-name="椭圆 23" class="cls-2" transform="translate(1107.918 2436.625)">
+        <ellipse class="cls-3" cx="8.5" cy="9" rx="8.5" ry="9"/>
+        <ellipse class="cls-4" cx="8.5" cy="9" rx="8" ry="8.5"/>
+      </g>
+      <line id="直线_6" data-name="直线 6" class="cls-2" x1="1.293" y2="3.564" transform="translate(1119.125 2434.125)"/>
+      <line id="直线_8" data-name="直线 8" class="cls-2" x1="5.466" y2="1.195" transform="translate(1123.952 2442.125)"/>
+      <line id="直线_9" data-name="直线 9" class="cls-2" x1="3" y1="4" transform="translate(1121.418 2452.125)"/>
+      <line id="直线_10" data-name="直线 10" class="cls-2" y1="6" x2="3" transform="translate(1108.418 2452.125)"/>
+      <line id="直线_7" data-name="直线 7" class="cls-2" x2="4" y2="3" transform="translate(1105.418 2438.125)"/>
+    </g>
+  </g>
+</svg>

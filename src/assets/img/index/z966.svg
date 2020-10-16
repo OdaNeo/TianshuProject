@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #36f;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="组_966" data-name="组 966" transform="translate(-748 -265)">
+    <circle id="椭圆_111" data-name="椭圆 111" class="cls-1" cx="33.5" cy="33.5" r="33.5" transform="translate(748 265)"/>
+    <path id="联合_4" data-name="联合 4" class="cls-2" d="M5108.424-1652a2,2,0,0,1-2-2v-11.068h-1.757v10.267h-4.4v1.867H5095v-5.6h5.272v1.866h2.637v-8.4h-2.637v1.867H5095v-5.6h5.272v1.867h2.637v-7.466h-2.637v1.866H5095v-5.6h5.272v1.867h4.4v9.332h1.757V-1678a2,2,0,0,1,2-2H5122a2,2,0,0,1,2,2v24a2,2,0,0,1-2,2Zm2.395-4.667h8.788v-1.867h-8.788Zm0-5.6h8.788v-1.866h-8.788Zm0-5.6h8.788v-1.867h-8.788Zm0-5.6h8.788v-1.866h-8.788Z" transform="translate(-4329 1964)"/>
+  </g>
+</svg>

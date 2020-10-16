@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #e2e2e2;
+      }
+
+      .cls-2 {
+        stroke: #333;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_977" data-name="组 977" transform="translate(-1504 -2907)">
+    <g id="矩形_39" data-name="矩形 39" class="cls-1" transform="translate(1504 2907)">
+      <rect class="cls-3" width="80" height="80" rx="19"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="79" height="79" rx="18.5"/>
+    </g>
+    <g id="组_111" data-name="组 111" transform="translate(857.884 2633.986)">
+      <path id="路径_87" data-name="路径 87" class="cls-2" d="M675.623,292.44l-8.217,14.233H683.84Z" transform="translate(1.262 0)"/>
+      <rect id="矩形_74" data-name="矩形 74" class="cls-2" width="24.625" height="4.394" rx="1.507" transform="translate(664.649 306.673)"/>
+      <rect id="矩形_75" data-name="矩形 75" class="cls-2" width="20.839" height="23.235" transform="translate(666.238 311.068)"/>
+      <rect id="矩形_76" data-name="矩形 76" class="cls-2" width="9.135" height="11.618" transform="translate(672.262 322.685)"/>
+      <rect id="矩形_77" data-name="矩形 77" class="cls-2" width="7.768" height="10.438" transform="translate(693.671 323.865)"/>
+      <path id="矩形_78" data-name="矩形 78" class="cls-2" d="M3.025,0H13.531a3.025,3.025,0,0,1,3.025,3.025V17.054a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3.025A3.025,3.025,0,0,1,3.025,0Z" transform="translate(689.274 317.249)"/>
+      <path id="矩形_79" data-name="矩形 79" class="cls-2" d="M3.025,0h4.8a3.025,3.025,0,0,1,3.025,3.025V7.077a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3.025A3.025,3.025,0,0,1,3.025,0Z" transform="translate(692.13 310.172)"/>
+      <rect id="矩形_80" data-name="矩形 80" class="cls-2" width="5.114" height="5.263" transform="translate(668.877 314.617)"/>
+      <rect id="矩形_81" data-name="矩形 81" class="cls-2" width="5.114" height="5.263" transform="translate(678.84 314.617)"/>
+    </g>
+  </g>
+</svg>

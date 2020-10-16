@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #3b4045;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_999" data-name="组 999" transform="translate(-411 -680)">
+    <g id="椭圆_15" data-name="椭圆 15" class="cls-1" transform="translate(411 680)">
+      <circle class="cls-3" cx="44" cy="44" r="44"/>
+      <circle class="cls-4" cx="44" cy="44" r="43"/>
+    </g>
+    <g id="组_116" data-name="组 116" transform="translate(32.601 205.616)">
+      <ellipse id="椭圆_62" data-name="椭圆 62" class="cls-2" cx="19" cy="7" rx="19" ry="7" transform="translate(403.399 498.384)"/>
+      <path id="路径_92" data-name="路径 92" class="cls-2" d="M422.062,534c-10.582,0-19.16-3.285-19.16-7.338,0-1.338.934-2.592,2.567-3.671" transform="translate(0 -4.616)"/>
+      <path id="路径_93" data-name="路径 93" class="cls-2" d="M402.9,507v9.373c0,4.053,8.578,7.338,19.16,7.338" transform="translate(0 -1.662)"/>
+      <path id="路径_94" data-name="路径 94" class="cls-2" d="M402.9,527.5v9.373c0,4.053,8.578,7.338,19.16,7.338" transform="translate(0 -5.447)"/>
+      <line id="直线_84" data-name="直线 84" class="cls-2" y2="10" transform="translate(441.399 505.384)"/>
+      <circle id="椭圆_63" data-name="椭圆 63" class="cls-2" cx="8.665" cy="8.665" r="8.665" transform="translate(425.329 520.529)"/>
+      <path id="路径_95" data-name="路径 95" class="cls-2" d="M436.26,536.292l3.609,2.027,3.887-4.8" transform="translate(-6.161 -6.559)"/>
+      <circle id="椭圆_64" data-name="椭圆 64" class="cls-2" cx="2.247" cy="2.247" r="2.247" transform="translate(410.987 503.487)"/>
+      <circle id="椭圆_65" data-name="椭圆 65" class="cls-2" cx="2.247" cy="2.247" r="2.247" transform="translate(419.577 503.487)"/>
+      <circle id="椭圆_66" data-name="椭圆 66" class="cls-2" cx="2.247" cy="2.247" r="2.247" transform="translate(428.167 503.487)"/>
+    </g>
+  </g>
+</svg>

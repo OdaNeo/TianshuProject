@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #e2e2e2;
+      }
+
+      .cls-2 {
+        stroke: #070203;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_983" data-name="组 983" transform="translate(-1088 -2872)">
+    <g id="矩形_31" data-name="矩形 31" class="cls-1" transform="translate(1088 2872)">
+      <rect class="cls-3" width="80" height="80" rx="19"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="79" height="79" rx="18.5"/>
+    </g>
+    <g id="组_101" data-name="组 101" transform="translate(659.353 2397.56)">
+      <path id="路径_80" data-name="路径 80" class="cls-2" d="M480.662,507.176c-.159,0-.31.033-.466.047a8.539,8.539,0,0,0-16.482-4.463,5.079,5.079,0,0,0-2.573-.715,5.132,5.132,0,0,0-5.132,5.131c0,.011,0,.022,0,.033a5.12,5.12,0,0,0,.329,10.229h24.32a5.131,5.131,0,0,0,0-10.262Z" transform="translate(0.392)"/>
+      <rect id="矩形_68" data-name="矩形 68" class="cls-2" width="40.263" height="7.724" transform="translate(449.31 523.155)"/>
+      <line id="直线_55" data-name="直线 55" class="cls-2" x2="2.164" transform="translate(453.829 527.51)"/>
+      <line id="直线_56" data-name="直线 56" class="cls-2" x2="26.656" transform="translate(458.492 527.51)"/>
+    </g>
+  </g>
+</svg>

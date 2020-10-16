@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #3b4045;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_1001" data-name="组 1001" transform="translate(-916 -680)">
+    <g id="椭圆_57" data-name="椭圆 57" class="cls-1" transform="translate(1004 680) rotate(90)">
+      <circle class="cls-3" cx="44" cy="44" r="44"/>
+      <circle class="cls-4" cx="44" cy="44" r="43"/>
+    </g>
+    <g id="组_118" data-name="组 118" transform="translate(17.292 206.083)">
+      <path id="路径_100" data-name="路径 100" class="cls-2" d="M963.572,523.427l-3.325-1.92a17.686,17.686,0,0,0,0-6.966l3.325-1.92a1.35,1.35,0,0,0,.494-1.844l-4.237-7.339a1.35,1.35,0,0,0-1.844-.495l-3.33,1.923a17.519,17.519,0,0,0-6.028-3.483v-3.843a1.35,1.35,0,0,0-1.35-1.35H938.8a1.35,1.35,0,0,0-1.35,1.35v3.843a17.523,17.523,0,0,0-6.027,3.483l-3.331-1.923a1.349,1.349,0,0,0-1.844.495l-4.237,7.339a1.349,1.349,0,0,0,.494,1.844l3.326,1.92a17.649,17.649,0,0,0,0,6.966l-3.326,1.92a1.35,1.35,0,0,0-.494,1.844l4.237,7.34a1.35,1.35,0,0,0,1.844.494l3.331-1.923a17.537,17.537,0,0,0,6.027,3.484v3.842a1.35,1.35,0,0,0,1.35,1.35h8.475a1.35,1.35,0,0,0,1.35-1.35v-3.842a17.533,17.533,0,0,0,6.028-3.484l3.33,1.923a1.351,1.351,0,0,0,1.844-.494l4.237-7.34A1.35,1.35,0,0,0,963.572,523.427Z" transform="translate(0 0)"/>
+      <circle id="椭圆_68" data-name="椭圆 68" class="cls-2" cx="3.159" cy="3.159" r="3.159" transform="translate(939.88 514.865)"/>
+      <path id="路径_101" data-name="路径 101" class="cls-2" d="M941.178,510.976a11.157,11.157,0,0,1,11.858.383" transform="translate(-3.764 -2.581)"/>
+      <path id="路径_102" data-name="路径 102" class="cls-2" d="M940.154,533.1a11.153,11.153,0,0,1-5.835-9.8" transform="translate(-2.43 -5.274)"/>
+      <path id="路径_103" data-name="路径 103" class="cls-2" d="M960.716,523.3a11.143,11.143,0,0,1-5.34,9.518" transform="translate(-6.527 -5.274)"/>
+      <circle id="椭圆_69" data-name="椭圆 69" class="cls-2" cx="2.419" cy="2.419" r="2.419" transform="translate(931.501 510.523)"/>
+      <circle id="椭圆_70" data-name="椭圆 70" class="cls-2" cx="2.419" cy="2.419" r="2.419" transform="translate(940.778 526.044)"/>
+      <circle id="椭圆_71" data-name="椭圆 71" class="cls-2" cx="2.419" cy="2.419" r="2.419" transform="translate(949.581 510.249)"/>
+    </g>
+  </g>
+</svg>
