@@ -4,8 +4,8 @@ set -e
 
 git add -A
 
-git commit -m 'init git'
+git commit -m 'ie11图片丢失'
 
-git push -f https://github.com/TCT-FontDev/TianshuProject.git master:master
+git push  https://github.com/TCT-FontDev/TianshuProject.git master:master
 
 cd

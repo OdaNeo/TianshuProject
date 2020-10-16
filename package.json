@@ -9,7 +9,6 @@
     "normalize.css": "^8.0.1",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "regenerator-runtime": "^0.13.7",
-    "script-ext-html-webpack-plugin": "^2.1.4",
     "scrollreveal": "^4.0.7",
     "terser-webpack-plugin": "^4.1.0"
   },

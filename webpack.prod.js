@@ -5,7 +5,6 @@ const common = require('./webpack.common')
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin') // runtime内联到html文件中，减少http请求
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 从js中提取css
 
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin') // cssnano
@@ -39,7 +38,6 @@ module.exports = merge(common, {
         }
       })
     ],
-    runtimeChunk: true, // 提取runtime，防止缓存失效
     splitChunks: {
       chunks: 'all', // 异步模块和入口模块
       minSize: 30000,
@@ -67,9 +65,6 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css' // prod启用contenthash
-    }),
-    new ScriptExtHtmlWebpackPlugin({
-      inline: /runtime~.*\.js$/ // 内联runtimeChunk到html
     })
     // new CompressionPlugin({
     //   exclude: [/dist/],
