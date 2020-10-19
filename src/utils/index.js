@@ -1,6 +1,6 @@
 import './rem' // rem
 
-import './render'
+import './render' // js render header footer
 
 import './anime' // header footer 动画
 

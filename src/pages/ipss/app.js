@@ -4,8 +4,6 @@ import '@/styles/ipss.styl' // 页面样式引入
 
 import '@/utils/index.js' // 公共方法引入
 
-import '@/utils/transitionend.js' // transitiongend兼容
-
 // 导航栏动画
 
 const navBar = document.querySelector('.nav_bar')
@@ -102,7 +100,7 @@ function handleNav() {
 
     navContainerItem[curIndex].style.left = -100 + '%'
 
-    navContainerItem[curIndex].addEventListener(`${window.ts.transition}`, () => {
+    navContainerItem[curIndex].addEventListener('transitionend', () => {
       navContainerItem.forEach((_, _i) => {
         if (_i === curIndex) {
           return
@@ -128,7 +126,7 @@ function handleNav() {
 
     navContainerItem[curIndex].style.left = 100 + '%'
 
-    navContainerItem[curIndex].addEventListener(`${window.ts.transition}`, () => {
+    navContainerItem[curIndex].addEventListener('transitionend', () => {
       navContainerItem.forEach((_, _i) => {
         if (_i === curIndex) {
           return

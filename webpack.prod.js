@@ -10,6 +10,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 从js中提�
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin') // cssnano
 const TerserJSPlugin = require('terser-webpack-plugin') // 压缩js代码
 
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
+
 // const CompressionPlugin = require('compression-webpack-plugin') // gzip
 
 module.exports = merge(common, {
@@ -67,7 +69,7 @@ module.exports = merge(common, {
       filename: 'css/[name].[contenthash:8].css' // prod启用contenthash
     })
     // new CompressionPlugin({
-    //   exclude: [/dist/],
+    //   test: /\.(js|css)$/i,
     //   algorithm: 'gzip',
     //   deleteOriginalAssets: true
     // })
@@ -112,24 +114,24 @@ module.exports = merge(common, {
             }
           },
           {
-            loader: 'image-webpack-loader',
+            loader: ImageMinimizerPlugin.loader,
             options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 50
-              },
-              optipng: {
-                enabled: false
-              },
-              pngquant: {
-                quality: [0.65, 0.9],
-                speed: 4
-              },
-              webp: {
-                quality: 75
-              },
-              imageminSvgo: {
-                plugins: [{ removeViewBox: false }]
+              severityError: 'warning', // Ignore errors on corrupted images
+              minimizerOptions: {
+                plugins: [
+                  ['mozjpeg', { progressive: true, quality: 50 }],
+                  ['pngquant', { quality: [0.65, 0.75], speed: 4 }],
+                  [
+                    'imagemin-svgo',
+                    {
+                      plugins: [
+                        {
+                          removeViewBox: false
+                        }
+                      ]
+                    }
+                  ]
+                ]
               }
             }
           }

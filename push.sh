@@ -4,7 +4,7 @@ set -e
 
 git add -A
 
-git commit -m 'try web components'
+git commit -m 'add ImageMinimizerPlugin'
 
 git push  https://github.com/TCT-FontDev/TianshuProject.git master:master
 

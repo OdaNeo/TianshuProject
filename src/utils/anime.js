@@ -3,6 +3,9 @@ const dropdown = headerHTML.querySelectorAll('.dropdown')
 
 dropdown.forEach(item => {
   const _layer = item.querySelector('.dropdown_layer')
+  _layer.style.height = 0 + 'rem'
+  _layer.style.display = 'block'
+
   let _timer = null
 
   item.addEventListener('mouseenter', e => {

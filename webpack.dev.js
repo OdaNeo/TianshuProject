@@ -5,8 +5,6 @@ const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
 const webpack = require('webpack')
 
-const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 从js中提取css
-
 module.exports = merge(common, {
   mode: 'development',
   output: {
@@ -23,11 +21,7 @@ module.exports = merge(common, {
     hot: true
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(), // HMR
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].css'
-      // chunkFilename: 'css/[id].css' // 默认启用 NamedModulesPlugin，不使用id
-    })
+    new webpack.HotModuleReplacementPlugin() // HMR
   ],
   optimization: {
     namedModules: true // 替代 NamedModulesPlugin，固定moduleId，开发环境默认启用
@@ -38,13 +32,7 @@ module.exports = merge(common, {
         test: /\.(css|styl)$/, // css-loader
         exclude: resolve('dist'),
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader, // dev环境下开启hmr
-            options: {
-              hmr: true,
-              reloadAll: true
-            }
-          },
+          'style-loader',
           'css-loader',
           {
             loader: 'postcss-loader',
