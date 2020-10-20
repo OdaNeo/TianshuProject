@@ -4,7 +4,7 @@ set -e
 
 git add -A
 
-git commit -m 'raw loader重构公共组件'
+git commit -m 'css tree shaking'
 
 git push  https://github.com/TCT-FontDev/TianshuProject.git master:master
 

@@ -58,7 +58,7 @@ module.exports = merge(common, {
             options: {
               // outputPath: 'img',
               limit: 8192,
-              name: '[name]-[hash:8].[ext]' // [path]===/src/assets/img/ 防止文件名重复
+              name: '[name]_[hash:8].[ext]' // 防止文件名重复
             }
           }
         ]

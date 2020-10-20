@@ -8,6 +8,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 从js中提取css
 
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin') // cssnano
+
 const TerserJSPlugin = require('terser-webpack-plugin') // 压缩js代码
 
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
@@ -18,13 +19,14 @@ module.exports = merge(common, {
   mode: 'production', // 防止控制台报错
   output: {
     // 多出口 prod环境下启用contenthash
-    filename: 'js/[name].[hash:8].js',
+    filename: 'js/[name]_[hash:8].js',
     path: resolve('dist'),
     publicPath: '/'
   },
   optimization: {
     minimizer: [
       new TerserJSPlugin({
+        cache: true, // 开启缓存
         terserOptions: {
           compress: {
             drop_console: true // 移除console
@@ -55,9 +57,9 @@ module.exports = merge(common, {
         },
         default: {
           name: 'utils',
-          test: resolve('src/utils'),
+          test: /\\src\\utils\\/,
           minChunks: 1,
-          priority: 5,
+          priority: 10,
           reuseExistingChunk: true
         }
       }
@@ -66,7 +68,7 @@ module.exports = merge(common, {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].[contenthash:8].css' // prod启用contenthash
+      filename: 'css/[name]_[contenthash:8].css' // prod启用contenthash
     })
     // new CompressionPlugin({
     //   test: /\.(js|css)$/i,
@@ -109,7 +111,7 @@ module.exports = merge(common, {
             options: {
               limit: 8192,
               outputPath: 'img',
-              name: '[name]-[hash:8].[ext]'
+              name: '[name]_[hash:8].[ext]'
               // publicPath: '../img'
             }
           },
@@ -164,7 +166,14 @@ module.exports = merge(common, {
       {
         test: /\.js$/,
         exclude: [/node_modules/, /dist/],
-        use: 'babel-loader'
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              cacheDirectory: true // 开启缓存
+            }
+          }
+        ]
       }
     ]
   }
