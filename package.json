@@ -36,6 +36,7 @@
     "postcss": "^7.0.32",
     "postcss-loader": "^4.0.1",
     "postcss-px2rem": "^0.3.0",
+    "raw-loader": "^4.0.2",
     "style-loader": "^1.2.1",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",

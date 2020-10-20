@@ -4,7 +4,7 @@ set -e
 
 git add -A
 
-git commit -m 'add ImageMinimizerPlugin'
+git commit -m 'raw loader重构公共组件'
 
 git push  https://github.com/TCT-FontDev/TianshuProject.git master:master
 

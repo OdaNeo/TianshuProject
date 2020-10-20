@@ -18,7 +18,7 @@ module.exports = merge(common, {
   mode: 'production', // 防止控制台报错
   output: {
     // 多出口 prod环境下启用contenthash
-    filename: 'js/[name].[contenthash:8].js',
+    filename: 'js/[name].[hash:8].js',
     path: resolve('dist'),
     publicPath: '/'
   },
@@ -116,7 +116,6 @@ module.exports = merge(common, {
           {
             loader: ImageMinimizerPlugin.loader,
             options: {
-              severityError: 'warning', // Ignore errors on corrupted images
               minimizerOptions: {
                 plugins: [
                   ['mozjpeg', { progressive: true, quality: 50 }],
@@ -135,6 +134,25 @@ module.exports = merge(common, {
               }
             }
           }
+          // {
+          //   loader: 'image-webpack-loader',
+          //   options: {
+          //     mozjpeg: {
+          //       progressive: true,
+          //       quality: 75
+          //     },
+          //     optipng: {
+          //       enabled: false
+          //     },
+          //     pngquant: {
+          //       quality: [0.65, 0.9],
+          //       speed: 4
+          //     },
+          //     imageminSvgo: {
+          //       plugins: [{ removeViewBox: false }]
+          //     }
+          //   }
+          // }
         ]
       },
       {
