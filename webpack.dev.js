@@ -56,9 +56,9 @@ module.exports = merge(common, {
           {
             loader: 'url-loader',
             options: {
-              // outputPath: 'img',
+              outputPath: 'img',
               limit: 8192,
-              name: '[name]_[hash:8].[ext]' // 防止文件名重复
+              name: '[name].[ext]' // 防止文件名重复
             }
           }
         ]
