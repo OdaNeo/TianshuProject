@@ -93,7 +93,7 @@ module.exports = merge(common, {
                 plugins: [
                   require('autoprefixer'),
                   require('postcss-px2rem')({
-                    remUnit: 50 // 50px = 1rem
+                    remUnit: 16 // 50px = 1rem
                   })
                 ]
               }

@@ -1,8 +1,13 @@
 const headerHTML = document.querySelector('#ts_header')
 const dropdown = headerHTML.querySelectorAll('.dropdown')
+const fz = parseInt(getComputedStyle(document.documentElement).getPropertyValue('font-size'))
 
 dropdown.forEach(item => {
   const _layer = item.querySelector('.dropdown_layer')
+
+  // 获得实际高度以及html fontsize
+  const _h = _layer.offsetHeight / fz
+
   _layer.style.height = 0 + 'rem'
   _layer.style.display = 'block'
 
@@ -24,7 +29,7 @@ dropdown.forEach(item => {
       if (_layer.style.display === 'none') {
         return
       }
-      _layer.style.height = 2.8 + 'rem'
+      _layer.style.height = _h + 'rem'
     }, 10)
   })
 

@@ -3,7 +3,7 @@ function _rem() {
   function a() {
     var b = document.documentElement.clientWidth || document.body.clientWidth
 
-    var c = (b / 1920) * 50
+    var c = (b / 1920) * 16
 
     // c = Math.floor(c * 10) / 10
     c = c.toFixed(1)

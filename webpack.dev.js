@@ -40,7 +40,7 @@ module.exports = merge(common, {
               postcssOptions: {
                 plugins: [
                   require('postcss-px2rem')({
-                    remUnit: 50 // 50px = 1rem
+                    remUnit: 16 // 50px = 1rem
                   })
                 ]
               }
@@ -58,7 +58,7 @@ module.exports = merge(common, {
             options: {
               outputPath: 'img',
               limit: 8192,
-              name: '[name].[ext]' // 防止文件名重复
+              name: '[path]_[name].[ext]'
             }
           }
         ]
