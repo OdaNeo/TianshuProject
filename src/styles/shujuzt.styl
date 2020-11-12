@@ -10,8 +10,10 @@
         color: #ffffff;
         background: url('@/assets/img/shujuzt/shujuzt-unsplash.jpg') no-repeat center center;
         background-size: 100% 100%;
-        overflow: hidden;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         &:before {
             content: ' ';
@@ -69,7 +71,6 @@
         }
 
         .section_shujuzt_btn {
-            position: absolute;
             width: 180px;
             height: 48px;
             font-size: 18px;
@@ -78,9 +79,7 @@
             border: 1px solid #FFFFFF;
             border-radius: 7px;
             box-sizing: border-box;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 83px;
+            margin-top: 118px;
         }
     }
 

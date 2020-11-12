@@ -10,8 +10,10 @@
         color: #FFFFFF;
         background: url('@/assets/img/shuzils/shuzilsDYHx6h.jpg') no-repeat center center;
         background-size: 100% 100%;
-        position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         &:before {
             content: ' ';
@@ -47,7 +49,6 @@
         }
 
         a {
-            position: absolute;
             width: 182px;
             height: 48px;
             font-size: 18px;
@@ -57,8 +58,6 @@
             border-radius: 6px;
             box-sizing: border-box;
             margin-top: 102px;
-            left: 50%;
-            transform: translateX(-50%);
         }
     }
 
@@ -68,7 +67,6 @@
         height: 860px;
         background: #FFFFFF;
         overflow: hidden;
-        position: relative;
 
         .section_shuzih_title {
             position: relative;
@@ -86,10 +84,8 @@
         }
 
         .item_list_top {
-            position: absolute;
-            top: 216px;
-            left: 50%;
-            transform: translateX(-50%);
+            position: relative;
+            margin: 99px auto 0 auto;
             width: 1260px;
             height: 228px;
             z-index: 3;
@@ -180,10 +176,8 @@
             width: 1545px;
             height: 10px;
             background: #3366FF;
-            position: absolute;
-            top: 491px;
-            left: 50%;
-            transform: translateX(-48%);
+            position: relative;
+            margin: 49px auto 0 auto;
 
             &:before {
                 content: ' ';
@@ -224,7 +218,7 @@
 
             .item_right {
                 position: absolute;
-                right: 36px;
+                right: -15px;
                 top: 32px;
             }
 
@@ -236,10 +230,8 @@
         }
 
         .item_list_bottom {
-            position: absolute;
-            top: 549px;
-            left: 50%;
-            transform: translateX(-50%);
+            position: relative;
+            margin: 47px auto 0 auto;
             width: 742px;
             height: 236px;
             display: flex;
