@@ -11,6 +11,7 @@
         background: url('@/assets/img/suanfazt/suanfaztDYHx6h3l.jpg') no-repeat center center;
         background-size: 100% 100%;
         position: relative;
+        overflow: hidden;
 
         &:before {
             content: ' ';
@@ -21,36 +22,26 @@
         }
 
         h3 {
-            height: 60px;
             font-size: 60px;
             font-weight: bold;
             line-height: 60px;
-            height: 60px;
             letter-spacing: 4px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 207px;
+            margin-top: 207px;
+            text-align: center;
         }
 
         h5 {
-            height: 21px;
             font-size: 18px;
             line-height: 21px;
             letter-spacing: 1px;
+            margin-top: 14px;
             text-align: center;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 281px;
         }
 
         .suanfa_detail {
             width: 733px;
-            position: absolute;
-            top: 361px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 59px auto 0 auto;
+            text-align: center;
             display: flex;
             justify-content: space-between;
 
@@ -79,15 +70,11 @@
     .section_item {
         width: 100%;
         height: 436px;
-        position: relative;
         background: #FFFFFF;
 
         .item_content {
             width: 1260px;
-            position: absolute;
-            top: 80px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 80px auto 0 auto;
             display: flex;
             justify-content: space-between;
 
@@ -100,9 +87,24 @@
                 justify-content: space-between;
 
                 i {
-                    height: 88px;
-                    width: 88px;
+                    height: 48px;
+                    width: 48px;
                     margin-bottom: 18px;
+                    position: relative;
+                    width: 88px;
+
+                    &:after {
+                        content: ' ';
+                        position: absolute;
+                        height: 88px;
+                        width: 88px;
+                        box-sizing: border-box;
+                        border: 2px solid #101426;
+                        border-radius: 50%;
+                        opacity: 0.5;
+                        top: -20px;
+                        left: -1px;
+                    }
                 }
 
                 h4 {
@@ -124,17 +126,17 @@
                 }
 
                 #icon_item_1 {
-                    background: url('@/assets/img/suanfazt/z974.svg') no-repeat center center;
+                    background: url('@/assets/img/suanfazt/z63.svg') no-repeat center center;
                     background-size: 100% 100%;
                 }
 
                 #icon_item_2 {
-                    background: url('@/assets/img/suanfazt/z972.svg') no-repeat center center;
+                    background: url('@/assets/img/suanfazt/z68.svg') no-repeat center center;
                     background-size: 100% 100%;
                 }
 
                 #icon_item_3 {
-                    background: url('@/assets/img/suanfazt/z973.svg') no-repeat center center;
+                    background: url('@/assets/img/suanfazt/z65.svg') no-repeat center center;
                     background-size: 100% 100%;
                 }
             }
@@ -146,17 +148,16 @@
         width: 100%;
         height: 680px;
         background: #f4f4f4;
-        position: relative;
+        overflow: hidden;
 
         .section_aizt_title {
-            position: absolute;
+            position: relative;
             height: 36px;
             font-size: 36px;
             letter-spacing: 2.5px;
             color: #101426;
-            top: 80px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-top: 80px;
+            text-align: center;
 
             &:after {
                 title_after();
@@ -166,10 +167,7 @@
         .section_aizt_suanfazt {
             width: 730px;
             height: 456px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 108px auto 0 auto;
             background: url('@/assets/img/suanfazt/z1022.png') no-repeat center center;
             background-size: 100% 100%;
 
@@ -223,19 +221,16 @@
         width: 100%;
         height: 1000px;
         background: #FFFFFF;
-        position: relative;
 
         .section_wfw_title {
-            height: 36px;
             font-size: 35px;
             line-height: 36px;
             color: #101426;
             letter-spacing: 3px;
             text-indent: 10px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 80px;
+            position: relative;
+            margin-top: 80px;
+            text-align: center;
 
             &:after {
                 title_after();
@@ -244,10 +239,8 @@
 
         .section_wfw_content {
             width: 1368px;
-            position: absolute;
-            top: 217px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 101px auto 0 auto;
+            position: relative;
 
             .content_qtywxq {
                 text-align: center;
@@ -256,8 +249,8 @@
                 margin: 0 auto;
                 width: 230px;
                 box-sizing: border-box;
-                border-left: 3PX solid #999999;
-                border-right: 3PX solid #999999;
+                border-left: 3px solid #999999;
+                border-right: 3px solid #999999;
                 height: 24px;
                 line-height: 24px;
                 font-size: 24px;
@@ -323,8 +316,8 @@
                     letter-spacing: 2px;
                     width: 173px;
                     box-sizing: border-box;
-                    border-left: 3PX solid #999999;
-                    border-right: 3PX solid #999999;
+                    border-left: 3px solid #999999;
+                    border-right: 3px solid #999999;
                     height: 24px;
                     line-height: 24px;
                     font-size: 24px;
@@ -394,8 +387,8 @@
                     letter-spacing: 2px;
                     width: 195px;
                     box-sizing: border-box;
-                    border-left: 3PX solid #999999;
-                    border-right: 3PX solid #999999;
+                    border-left: 3px solid #999999;
+                    border-right: 3px solid #999999;
                     height: 24px;
                     line-height: 24px;
                     font-size: 24px;
@@ -476,8 +469,8 @@
                     position: absolute;
                     letter-spacing: 2px;
                     box-sizing: border-box;
-                    border-left: 3PX solid #999999;
-                    border-right: 3PX solid #999999;
+                    border-left: 3px solid #999999;
+                    border-right: 3px solid #999999;
                     width: 150px;
                     height: 24px;
                     line-height: 24px;
@@ -564,8 +557,8 @@
                     text-align: center;
                     letter-spacing: 2px;
                     box-sizing: border-box;
-                    border-left: 3PX solid #999999;
-                    border-right: 3PX solid #999999;
+                    border-left: 3px solid #999999;
+                    border-right: 3px solid #999999;
                     position: absolute;
                     left: 187px;
                     top: 330px;
@@ -631,8 +624,8 @@
                     position: absolute;
                     letter-spacing: 2px;
                     box-sizing: border-box;
-                    border-left: 3PX solid #999999;
-                    border-right: 3PX solid #999999;
+                    border-left: 3px solid #999999;
+                    border-right: 3px solid #999999;
                     width: 145px;
                     height: 24px;
                     line-height: 24px;

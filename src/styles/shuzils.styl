@@ -11,6 +11,7 @@
         background: url('@/assets/img/shuzils/shuzilsDYHx6h.jpg') no-repeat center center;
         background-size: 100% 100%;
         position: relative;
+        overflow: hidden;
 
         &:before {
             content: ' ';
@@ -21,37 +22,28 @@
         }
 
         h3 {
-            position: absolute;
-            height: 60px;
             font-size: 60px;
             font-weight: bold;
             line-height: 60px;
             letter-spacing: 4.5px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 226px;
+            margin-top: 226px;
+            text-align: center;
         }
 
         h4 {
-            position: absolute;
-            height: 20px;
             font-size: 20px;
             line-height: 20px;
             letter-spacing: 1px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 346px;
+            margin-top: 25px;
+            text-align: center;
         }
 
         h5 {
-            position: absolute;
-            height: 21px;
             font-size: 18px;
             line-height: 18px;
             letter-spacing: 0.5px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 300px;
+            margin-top: 14px;
+            text-align: center;
         }
 
         a {
@@ -61,12 +53,12 @@
             font-size: 18px;
             line-height: 48px;
             text-align: center;
-            border: 1PX solid #FFFFFF;
+            border: 1px solid #FFFFFF;
             border-radius: 6px;
             box-sizing: border-box;
+            margin-top: 102px;
             left: 50%;
             transform: translateX(-50%);
-            top: 468px;
         }
     }
 
@@ -75,19 +67,18 @@
         width: 100%;
         height: 860px;
         background: #FFFFFF;
+        overflow: hidden;
         position: relative;
 
         .section_shuzih_title {
-            position: absolute;
+            position: relative;
             height: 36px;
             font-size: 36px;
             line-height: 36px;
             letter-spacing: 1.5px;
             text-align: center;
             color: #101426;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 80px;
+            margin-top: 80px;
 
             &:after {
                 title_after();
@@ -191,7 +182,8 @@
             background: #3366FF;
             position: absolute;
             top: 491px;
-            left: 239px;
+            left: 50%;
+            transform: translateX(-48%);
 
             &:before {
                 content: ' ';
@@ -332,19 +324,16 @@
         width: 100%;
         height: 720px;
         background: #F4F4F4;
-        position: relative;
+        overflow: hidden;
 
         .section_sanweicj_title {
-            position: absolute;
             width: 150px;
-            height: 36px;
             font-size: 36px;
             line-height: 36px;
             color: #101426;
             letter-spacing: 1px;
-            top: 80px;
-            left: 50%;
-            transform: translateX(-50%);
+            position: relative;
+            margin: 80px auto 0 auto;
 
             &:after {
                 title_after();
@@ -354,10 +343,7 @@
         .section_sanweicj_item_list {
             width: 1200px;
             height: 496px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 200px;
+            margin: 84px auto 0 auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -395,18 +381,16 @@
         height: 840px;
         background: #FFFFFF;
         position: relative;
+        overflow: hidden;
 
         .section_pingguyc_title {
-            width: 376px;
-            height: 36px;
             font-size: 36px;
             line-height: 36px;
             letter-spacing: 1.5px;
             color: #101426;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 80px;
-            position: absolute;
+            margin-top: 80px;
+            text-align: center;
+            position: relative;
 
             &:after {
                 title_after();
@@ -416,10 +400,7 @@
         .section_pingguyc_video {
             width: 1000px;
             height: 565.5px;
-            position: absolute;
-            top: 197px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 81px auto 0 auto;
             background-color: rgba(226, 226, 226, 1);
         }
     }

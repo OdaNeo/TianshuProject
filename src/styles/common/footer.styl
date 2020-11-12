@@ -3,81 +3,86 @@
     width: 100%;
     background-color: #2E3A59;
     color: #ffffff;
-    position: relative;
 
-    .footer_logo {
-        position: absolute;
-        left: 279px;
-        top: 80px;
-        height: 38px;
-        font-size: 32px;
-    }
+    .ts_footer_container {
+        width: 1350px;
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
 
-    .footer_platform {
-        position: absolute;
-        left: 534px;
-        top: 84px;
-
-        h3 {
-            width: 100px;
-            height: 24px;
-            font-size: 24px;
-            cursor: pointer;
-            margin-bottom: 49px;
+        .footer_logo {
+            margin-top: 80px;
+            height: 38px;
+            font-size: 32px;
+            float: left;
         }
 
-        h5 {
-            height: 14px;
-            font-size: 14px;
-            cursor: pointer;
-            margin-bottom: 21px;
-        }
-    }
+        .footer_platform {
+            margin-top: 84px;
+            margin-left: 196px;
+            float: left;
 
-    .footer_about {
-        position: absolute;
-        left: 864px;
-        top: 84px;
+            h3 {
+                width: 100px;
+                height: 24px;
+                font-size: 24px;
+                cursor: pointer;
+                margin-bottom: 49px;
+            }
 
-        h3 {
-            width: 100px;
-            height: 24px;
-            font-size: 24px;
-            cursor: pointer;
-            margin-bottom: 49px;
-        }
-
-        h5 {
-            height: 14px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-    }
-
-    .footer_connect {
-        position: absolute;
-        line-height: 14px;
-        top: 95px;
-        left: 1279px;
-        font-size: 14px;
-
-        .footer_connect_co {
-            margin-top: 118px;
-
-            .exp_1 {
-                display: inline-block;
-                padding-right: 16px;
+            h5 {
                 height: 14px;
-                position: relative;
+                font-size: 14px;
+                cursor: pointer;
+                margin-bottom: 21px;
+            }
+        }
 
-                &:after {
-                    content: ' ';
-                    position: absolute;
-                    background-color: #fff;
-                    width: 2px;
+        .footer_about {
+            margin-top: 84px;
+            margin-left: 216px;
+            float: left;
+
+            h3 {
+                width: 100px;
+                height: 24px;
+                font-size: 24px;
+                cursor: pointer;
+                margin-bottom: 49px;
+            }
+
+            h5 {
+                height: 14px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+
+        .footer_connect {
+            margin-top: 95px;
+            margin-left: 319px;
+            float: left;
+            line-height: 14px;
+            font-size: 14px;
+
+            .footer_connect_co {
+                margin-top: 118px;
+
+                .exp_1 {
+                    display: inline-block;
+                    padding-right: 16px;
                     height: 14px;
-                    top: 0px;
-                    right: 7px;
+                    position: relative;
+
+                    &:after {
+                        content: ' ';
+                        position: absolute;
+                        background-color: #fff;
+                        width: 2px;
+                        height: 14px;
+                        top: 0px;
+                        right: 7px;
+                    }
                 }
             }
         }

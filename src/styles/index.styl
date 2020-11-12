@@ -7,48 +7,34 @@
     .tianshu_main {
         width: 100%;
         height: 960px;
-        background: #333333;
+        background: url('@/assets/img/index/tx11.jpg') no-repeat center center;
+        background-size: 100% 100%;
         color: #FFFFFF;
-        position: relative;
+        overflow: hidden;
 
-        .tianshu_main_container {
-            width: 100%;
-            height: 100%;
+        h2 {
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 60px;
+            letter-spacing: 3px;
+            margin-top: 365px;
+            text-align: center;
+        }
 
-            h2 {
-                position: absolute;
-                height: 60px;
-                font-size: 60px;
-                font-weight: bold;
-                line-height: 60px;
-                letter-spacing: 3px;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 365px;
-            }
+        h5 {
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            margin-top: 27px;
+            text-align: center;
+        }
 
-            h5 {
-                position: absolute;
-                height: 18px;
-                font-size: 18px;
-                line-height: 18px;
-                letter-spacing: 1px;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 452px;
-            }
-
-            h4 {
-                position: absolute;
-                height: 75px;
-                font-size: 18px;
-                line-height: 31px;
-                letter-spacing: 1px;
-                text-align: center;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 521px;
-            }
+        h4 {
+            font-size: 18px;
+            line-height: 31px;
+            letter-spacing: 1px;
+            margin-top: 51px;
+            text-align: center;
         }
     }
 
@@ -63,7 +49,7 @@
         .left_circle {
             width: 671px;
             height: 671px;
-            border: 1PX solid rgba(51, 102, 255, 0.5);
+            border: 1px solid rgba(51, 102, 255, 0.5);
             border-radius: 50%;
             position: absolute;
             top: -57px;
@@ -95,7 +81,7 @@
         .right_circle {
             width: 789px;
             height: 789px;
-            border: 1PX solid rgba(51, 102, 255, 0.5);
+            border: 1px solid rgba(51, 102, 255, 0.5);
             border-radius: 50%;
             position: absolute;
             top: -120px;
@@ -127,11 +113,12 @@
         .bottom_circle {
             width: 789px;
             height: 789px;
-            border: 1PX solid rgba(51, 102, 255, 0.5);
+            border: 1px solid rgba(51, 102, 255, 0.5);
             border-radius: 50%;
             position: absolute;
             bottom: -570px;
-            left: 260px;
+            left: 50%;
+            transform: translateX(-88%);
 
             &:before {
                 content: ' ';
@@ -147,7 +134,7 @@
 
         .title_circle {
             position: absolute;
-            border: 1PX solid #3366FF;
+            border: 1px solid #3366FF;
             border-radius: 50%;
             left: 50%;
             transform: translateX(-50%);
@@ -261,7 +248,7 @@
             height: 310px;
             line-height: 310px;
             text-align: center;
-            border: 1PX solid #3366FF;
+            border: 1px solid #3366FF;
             border-radius: 50%;
             top: 247px;
             left: 50%;
@@ -304,56 +291,64 @@
             background: url('@/assets/img/index/z966.svg') no-repeat center center;
             background-size: 100% 100%;
             top: 205px;
-            left: 748px;
+            left: 50%;
+            transform: translateX(-300%);
         }
 
         .icon_2 {
             background: url('@/assets/img/index/z965.svg') no-repeat center center;
             background-size: 100% 100%;
             top: 191px;
-            left: 937px;
+            left: 50%;
+            transform: translateX(-20%);
         }
 
         .icon_3 {
             background: url('@/assets/img/index/z963.svg') no-repeat center center;
             background-size: 100% 100%;
             top: 198px;
-            left: 1106px;
+            left: 50%;
+            transform: translateX(220%);
         }
 
         .icon_4 {
             background: url('@/assets/img/index/z967.svg') no-repeat center center;
             background-size: 100% 100%;
             top: 336px;
-            left: 671px;
+            left: 50%;
+            transform: translateX(-430%);
         }
 
         .icon_5 {
             background: url('@/assets/img/index/z968.svg') no-repeat center center;
             background-size: 100% 100%;
             top: 456px;
-            left: 800px;
+            left: 50%;
+            transform: translateX(-230%);
         }
 
         .icon_6 {
             background: url('@/assets/img/index/z964.svg') no-repeat center center;
             background-size: 100% 100%;
             top: 409px;
-            left: 1121px;
+            left: 50%;
+            transform: translateX(250%);
         }
 
         .icon_7 {
             background: url('@/assets/img/index/z969.svg') no-repeat center center;
             background-size: 100% 100%;
             top: 589px;
-            left: 901px;
+            left: 50%;
+            transform: translateX(-90%);
         }
 
         .icon_8 {
             background: url('@/assets/img/index/z970.svg') no-repeat center center;
             background-size: 100% 100%;
             top: 540px;
-            left: 1094px;
+            left: 50%;
+            transform: translateX(190%);
         }
 
         .text {
@@ -390,76 +385,23 @@
 
         .right_top {
             position: absolute;
-            left: 1329px;
+            right: 390px;
             top: 108px;
         }
 
         .right_bottom {
             position: absolute;
-            left: 1329px;
+            right: 340px;
             top: 347px;
         }
 
         .center_bottom {
             position: absolute;
-            left: 847px;
             bottom: 48px;
+            left: 44.5%;
 
             p {
                 letter-spacing: 0px;
-            }
-        }
-    }
-
-    // 数字孪生
-    .shuzils {
-        width: 1920px;
-        height: 570px;
-        display: flex;
-
-        .shuzils_left, .shuzils_right {
-            position: relative;
-            flex: 1;
-            background: linear-gradient(91deg, #101426 0%, #5F626E 100%);
-        }
-
-        .shuzils_left {
-            .shuzils_left_txt {
-                display: block;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 181px;
-                font-size: 36px;
-                font-weight: bold;
-                color: #FFFFFF;
-                letter-spacing: 4px;
-            }
-        }
-
-        .shuzils_right {
-            .shuzils_right_txt {
-                display: block;
-                position: absolute;
-                top: 181px;
-                left: 189px;
-
-                h3 {
-                    padding-bottom: 51px;
-                    font-size: 36px;
-                    font-weight: bold;
-                    color: #FFFFFF;
-                    letter-spacing: 4px;
-                    text-indent: 26px;
-                    width: 187px;
-                }
-
-                h5 {
-                    width: 489px;
-                    line-height: 32px;
-                    color: #FFFFFF;
-                    font-size: 14px;
-                }
             }
         }
     }
@@ -472,48 +414,53 @@
         background-color: #f4f4f4;
         z-index: 9;
 
-        .shujuzt_pic {
-            width: 740px;
-            height: 371px;
-            position: absolute;
-            top: 125px;
-            left: 271px;
-            background: url('@/assets/img/index/mbz457.png') no-repeat center center;
-            background-size: 100% 100%;
-        }
+        .shujuzt_container {
+            width: 1350px;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
 
-        .shujuzt_contain {
-            position: absolute;
-            width: 569px;
-            left: 1069px;
-            top: 167px;
-
-            h3 {
-                height: 36px;
-                font-size: 36px;
-                color: #101426;
-                margin-bottom: 40px;
+            .shujuzt_pic {
+                float: left;
+                width: 740px;
+                height: 371px;
+                margin-top: 125px;
+                background: url('@/assets/img/index/mbz457.png') no-repeat center center;
+                background-size: 100% 100%;
             }
 
-            h5 {
-                height: 123px;
-                font-size: 14px;
-                line-height: 32px;
-                color: #666666;
-                letter-spacing: 0px;
-                margin-bottom: 25px;
-            }
+            .shujuzt_contain {
+                float: right;
+                width: 569px;
+                margin-top: 167px;
 
-            a {
-                display: inline-block;
-                width: 180px;
-                height: 48px;
-                line-height: 48px;
-                text-align: center;
-                background: #3366FF;
-                border-radius: 7px;
-                font-size: 18px;
-                color: #FFFFFF;
+                h3 {
+                    height: 36px;
+                    font-size: 36px;
+                    color: #101426;
+                    margin-bottom: 40px;
+                }
+
+                h5 {
+                    height: 123px;
+                    font-size: 14px;
+                    line-height: 32px;
+                    color: #666666;
+                    letter-spacing: 0px;
+                    margin-bottom: 25px;
+                }
+
+                a {
+                    display: inline-block;
+                    width: 180px;
+                    height: 48px;
+                    line-height: 48px;
+                    text-align: center;
+                    background: #3366FF;
+                    border-radius: 7px;
+                    font-size: 18px;
+                    color: #FFFFFF;
+                }
             }
         }
     }
@@ -526,92 +473,98 @@
         position: relative;
         z-index: 5;
 
-        .suanfazt_contain {
-            position: absolute;
-            width: 567px;
-            left: 279px;
-            top: 160px;
+        .suanfazt_container {
+            width: 1350px;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
 
-            h3 {
-                color: #101426;
-                height: 36px;
-                font-size: 36px;
-                color: #101426;
-                margin-bottom: 38px;
+            .suanfazt_left {
+                float: left;
+
+                h3 {
+                    color: #101426;
+                    height: 36px;
+                    font-size: 36px;
+                    color: #101426;
+                    margin-top: 160px;
+                }
+
+                h5 {
+                    width: 570px;
+                    height: 94px;
+                    font-size: 14px;
+                    line-height: 32px;
+                    color: #666666;
+                    margin-top: 44px;
+                }
+
+                a {
+                    display: inline-block;
+                    margin-top: 60px;
+                    width: 180px;
+                    height: 48px;
+                    background: #3366FF;
+                    border-radius: 6px;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 48px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
             }
 
-            h5 {
-                height: 94px;
-                font-size: 14px;
-                line-height: 32px;
-                color: #666666;
-                margin-bottom: 55px;
-            }
+            .suanfazt_right {
+                width: 611px;
+                height: 382px;
+                margin-top: 119px;
+                background: url('@/assets/img/index/z1021.png') no-repeat center center;
+                background-size: 100% 100%;
+                float: right;
+                position: relative;
 
-            a {
-                display: inline-block;
-                width: 180px;
-                height: 48px;
-                background: #3366FF;
-                border-radius: 6px;
-                color: #fff;
-                font-size: 18px;
-                line-height: 48px;
-                text-align: center;
-                color: #FFFFFF;
-            }
-        }
+                h3 {
+                    height: 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #333333;
+                    position: absolute;
+                    top: 36px;
+                    left: 275px;
+                }
 
-        .suanfazt_right {
-            width: 611px;
-            height: 382px;
-            position: absolute;
-            top: 119px;
-            left: 1026px;
-            background: url('@/assets/img/index/z1021.png') no-repeat center center;
-            background-size: 100% 100%;
+                h5 {
+                    position: absolute;
+                    display: inline-block;
+                    height: 14px;
+                    font-size: 14px;
+                    color: #333333;
+                }
 
-            h3 {
-                height: 20px;
-                font-size: 20px;
-                font-weight: bold;
-                color: #333333;
-                position: absolute;
-                top: 36px;
-                left: 275px;
-            }
+                .exp1 {
+                    bottom: 37px;
+                    left: 62px;
+                }
 
-            h5 {
-                position: absolute;
-                display: inline-block;
-                height: 14px;
-                font-size: 14px;
-                color: #333333;
-            }
+                .exp2 {
+                    bottom: 135px;
+                    left: 146px;
+                }
 
-            .exp1 {
-                bottom: 37px;
-                left: 62px;
-            }
+                .exp3 {
+                    bottom: 183px;
+                    left: 280px;
+                }
 
-            .exp2 {
-                bottom: 135px;
-                left: 146px;
-            }
+                .exp4 {
+                    bottom: 135px;
+                    left: 422px;
+                }
 
-            .exp3 {
-                bottom: 183px;
-                left: 280px;
-            }
-
-            .exp4 {
-                bottom: 135px;
-                left: 422px;
-            }
-
-            .exp5 {
-                bottom: 37px;
-                left: 494px;
+                .exp5 {
+                    bottom: 37px;
+                    left: 494px;
+                }
             }
         }
     }

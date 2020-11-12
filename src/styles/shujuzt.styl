@@ -10,6 +10,7 @@
         color: #ffffff;
         background: url('@/assets/img/shujuzt/shujuzt-unsplash.jpg') no-repeat center center;
         background-size: 100% 100%;
+        overflow: hidden;
         position: relative;
 
         &:before {
@@ -21,36 +22,27 @@
         }
 
         .section_shujuzt_title {
-            position: absolute;
-            height: 60px;
             font-size: 60px;
             font-weight: bold;
             line-height: 60px;
             letter-spacing: 4.5px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 177px;
+            margin: 177px auto 0 auto;
+            text-align: center;
         }
 
         .section_shujuzt_subtitle {
-            position: absolute;
             height: 18px;
             font-size: 18px;
             text-align: center;
             line-height: 18px;
             letter-spacing: 1px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 251px;
+            margin: 14px auto 0 auto;
         }
 
         .shujuzt_detail {
-            position: absolute;
             width: 786px;
             height: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 331px;
+            margin: 62px auto 0 auto;
             display: flex;
             justify-content: space-between;
 
@@ -83,7 +75,7 @@
             font-size: 18px;
             line-height: 46px;
             text-align: center;
-            border: 1PX solid #FFFFFF;
+            border: 1px solid #FFFFFF;
             border-radius: 7px;
             box-sizing: border-box;
             left: 50%;
@@ -97,15 +89,12 @@
         width: 100%;
         height: 505px;
         background: #FFFFFF;
-        position: relative;
 
         .item_list {
             width: 1180px;
-            height: 345px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 80px;
+            height: 100%;
+            overflow: hidden;
+            margin: 80px auto 0 auto;
             display: flex;
             justify-content: space-between;
 
@@ -151,7 +140,7 @@
                         &:after {
                             content: ' ';
                             width: 53px;
-                            border-bottom: 1PX dashed #999999;
+                            border-bottom: 1px dashed #999999;
                             position: absolute;
                             bottom: 0px;
                             left: 50%;
@@ -193,18 +182,16 @@
         width: 100%;
         height: 640px;
         background: #F4F4F4;
-        position: relative;
+        overflow: hidden;
 
         .section_zhongtainl_title {
-            position: absolute;
-            height: 36px;
             font-size: 36px;
             line-height: 36px;
             color: #101426;
             letter-spacing: 2px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 80px;
+            margin-top: 80px;
+            position: relative;
+            text-align: center;
 
             &:after {
                 title_after();
@@ -214,10 +201,7 @@
         .section_zhongtainl_list {
             width: 1365px;
             height: 359px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 217px;
+            margin: 101px auto 0 auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -294,18 +278,15 @@
         width: 100%;
         height: 1024px;
         background: #FFFFFF;
-        position: relative;
 
         .section_kaiyuandsj_title {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 80px;
-            height: 36px;
+            margin-top: 80px;
+            text-align: center;
             font-size: 36px;
             line-height: 36px;
             color: #101426;
             letter-spacing: 3px;
+            position: relative;
 
             &:after {
                 title_after();
@@ -313,12 +294,10 @@
         }
 
         .section_kaiyuandsj_top {
-            position: absolute;
+            position: relative;
             width: 1365px;
             height: 506px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 186px;
+            margin: 70px auto 0 auto;
 
             .top_left {
                 width: 50px;
@@ -423,7 +402,7 @@
                             width: 120px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -448,7 +427,7 @@
                             width: 133px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -480,7 +459,7 @@
                                 width: 104px;
                                 height: 31px;
                                 background: #FFFFFF;
-                                border: 1PX dashed #598BFF;
+                                border: 1px dashed #598BFF;
                                 border-radius: 10px;
                                 font-size: 16px;
                                 line-height: 31px;
@@ -502,7 +481,7 @@
                                 width: 244px;
                                 height: 45px;
                                 background: #FFFFFF;
-                                border: 1PX dashed #598BFF;
+                                border: 1px dashed #598BFF;
                                 border-radius: 10px;
                                 font-size: 16px;
                                 line-height: 45px;
@@ -531,7 +510,7 @@
                             width: 210px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -641,7 +620,7 @@
                             width: 120px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -666,7 +645,7 @@
                             width: 120px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -691,7 +670,7 @@
                             width: 246px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -766,7 +745,7 @@
                             width: 210px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -825,7 +804,7 @@
                             width: 140px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -846,7 +825,7 @@
                             width: 140px;
                             height: 89px;
                             background: #FFFFFF;
-                            border: 1PX dashed #598BFF;
+                            border: 1px dashed #598BFF;
                             border-radius: 10px;
                             text-align: center;
                             font-size: 16px;
@@ -875,7 +854,7 @@
                                 height: 36px;
                                 line-height: 36px;
                                 background: #FFFFFF;
-                                border: 1PX dashed #598BFF;
+                                border: 1px dashed #598BFF;
                                 border-radius: 10px;
                                 position: relative;
 
@@ -906,7 +885,7 @@
                                 height: 36px;
                                 line-height: 36px;
                                 background: #FFFFFF;
-                                border: 1PX dashed #598BFF;
+                                border: 1px dashed #598BFF;
                                 border-radius: 10px;
                                 position: relative;
                                 margin-top: 15px;
@@ -948,7 +927,7 @@
                     width: 44px;
                     height: 412px;
                     background: #F6F9FF;
-                    border: 1PX dashed #598BFF;
+                    border: 1px dashed #598BFF;
                     border-radius: 29px;
                     line-height: 44px;
                     font-size: 16px;
@@ -961,31 +940,25 @@
         }
 
         .section_kaiyuandsj_center {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 722px;
             width: 1365px;
             height: 50px;
             background: rgba(217, 228, 255, 0.23);
-            border: 1PX solid rgba(89, 139, 255, 0.23);
+            border: 1px solid rgba(89, 139, 255, 0.23);
             border-radius: 25px;
             font-size: 22px;
             line-height: 50px;
             color: #3994F0;
             text-align: center;
             letter-spacing: 2px;
+            margin: 30px auto 0 auto;
         }
 
         .section_kaiyuandsj_bottom {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 804px;
             width: 1365px;
             height: 140px;
             color: #3994F0;
             text-align: center;
+            margin: 32px auto 0 auto;
 
             .bottom_left {
                 width: 50px;
@@ -1057,7 +1030,7 @@
                     width: 238px;
                     height: 29px;
                     background: #FFFFFF;
-                    border: 1PX dashed #598BFF;
+                    border: 1px dashed #598BFF;
                     border-radius: 10px;
                     font-size: 16px;
                     line-height: 27px;
@@ -1135,7 +1108,7 @@
                     color: #333333;
                     box-sizing: border-box;
                     background: #FFFFFF;
-                    border: 1PX dashed #598BFF;
+                    border: 1px dashed #598BFF;
                     border-radius: 10px;
                     position: absolute;
                     left: 195px;
