@@ -25,7 +25,7 @@ dropdown.forEach(item => {
       if (_layer.style.display === 'none') {
         return
       }
-      _layer.style.height = 8.8 + 'rem'
+      _layer.style.height = 1.4 + 'rem'
     }, 10)
   })
 

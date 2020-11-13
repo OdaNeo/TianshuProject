@@ -16,6 +16,7 @@ module.exports = merge(common, {
   },
   devtool: 'eval-cheap-module-source-map',
   devServer: {
+    host: '192.168.59.192',
     port: 7863,
     open: true,
     hot: true
@@ -40,7 +41,8 @@ module.exports = merge(common, {
               postcssOptions: {
                 plugins: [
                   require('postcss-px2rem')({
-                    remUnit: 16 // 50px = 1rem
+                    remUnit: 100, // 50px = 1rem
+                    remPrecision: 2
                   })
                 ]
               }

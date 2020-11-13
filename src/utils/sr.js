@@ -10,7 +10,7 @@ const op = {
   origin: 'bottom',
   reset: false,
   viewOffset: {
-    bottom: 150
+    bottom: 50
   }
 }
 
