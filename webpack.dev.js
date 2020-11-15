@@ -16,7 +16,7 @@ module.exports = merge(common, {
   },
   devtool: 'eval-cheap-module-source-map',
   devServer: {
-    host: '192.168.59.192',
+    // host: '192.168.59.192',
     port: 7863,
     open: true,
     hot: true
