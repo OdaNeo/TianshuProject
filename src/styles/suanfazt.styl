@@ -6,10 +6,11 @@
     // 算法中台
     .section_suanfa {
         width: 100%;
-        height: 600px;
+        height: 0;
+        padding-bottom: 31.25%;
         color: #ffffff;
         background: url('@/assets/img/suanfazt/suanfaztDYHx6h3l.jpg') no-repeat center center;
-        background-size: 1903px 100%;
+        background-size: 100% 100%;
         position: relative;
         overflow: hidden;
 
@@ -17,7 +18,7 @@
             content: ' ';
             position: absolute;
             width: 100%;
-            height: 600px;
+            padding-bottom: 31.25%;
             background-color: rgba(9, 28, 122, 0.61);
         }
 
@@ -74,14 +75,14 @@
         overflow: hidden;
 
         .item_content {
-            width: 1260px;
+            width: $g-width;
             margin: 80px auto 0 auto;
             display: flex;
             justify-content: space-between;
 
             .item_content_item {
                 height: 246px;
-                width: 260px;
+                width: 280px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -221,6 +222,7 @@
         width: 100%;
         height: 1000px;
         background: #FFFFFF;
+        overflow: hidden;
 
         .section_wfw_title {
             font-size: 35px;
@@ -238,7 +240,7 @@
         }
 
         .section_wfw_content {
-            width: 1368px;
+            width: $g-width;
             margin: 101px auto 0 auto;
             position: relative;
 
@@ -257,11 +259,11 @@
                 color: #666666;
 
                 &:before {
-                    suanfazt_section_wfw_content_before(569px);
+                    suanfazt_section_wfw_content_before(560px);
                 }
 
                 &:after {
-                    suanfazt_section_wfw_content_after(569px);
+                    suanfazt_section_wfw_content_after(560px);
                 }
             }
 
