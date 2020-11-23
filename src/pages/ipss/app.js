@@ -17,7 +17,7 @@ const navContainer = document.querySelector('.nav_container')
 const navContainerItem = navContainer.querySelectorAll('.nav_container_item')
 
 const TRANSITION_TIME = 500
-const SLIDER_TIME = 4000
+const SLIDER_TIME = 3500
 const SCROLL_HEIGHT = 900
 const max = navBarItem.length
 
