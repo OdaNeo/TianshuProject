@@ -6,18 +6,20 @@
     // 数据中台
     .section_amos {
         width: 100%;
-        height: 600px;
+        height: 0;
+        padding-bottom: 31.25%;
         overflow: hidden;
         color: #ffffff;
         background: url('@/assets/img/amos/81cc698.jpg') no-repeat center -50px;
-        background-size: 1903px;
+        background-size: 100%;
         position: relative;
 
         &:before {
             content: ' ';
             position: absolute;
             width: 100%;
-            height: 600px;
+            height: 0;
+            padding-bottom: 31.25%;
             background-color: rgba(9, 28, 122, 0.7);
         }
 
@@ -222,7 +224,7 @@
 
         .section_jueceshujugl_container {
             margin: 0 auto;
-            width: 1903px;
+            width: $g-width;
             height: 100%;
             position: relative;
 
@@ -231,7 +233,6 @@
                 height: 708px;
                 float: left;
                 margin-top: 65px;
-                margin-left: 277px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -334,7 +335,7 @@
                 width: 1px;
                 height: 860px;
                 background-color: #D9DEEA;
-                left: 305px;
+                left: 305px - 275px;
                 top: -21px;
             }
 
@@ -345,7 +346,6 @@
                 height: 437px;
                 float: right;
                 margin-top: 330px;
-                margin-right: 277px;
             }
         }
     }

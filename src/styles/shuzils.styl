@@ -6,10 +6,11 @@
     // 数字孪生
     .section_shuzils {
         width: 100%;
-        height: 600px;
+        height: 0;
+        padding-bottom: 31.25%;
         color: #FFFFFF;
         background: url('@/assets/img/shuzils/shuzilsDYHx6h.jpg') no-repeat center center;
-        background-size: 1903px 100%;
+        background-size: 100% 100%;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -19,7 +20,8 @@
             content: ' ';
             position: absolute;
             width: 100%;
-            height: 600px;
+            height: 0;
+            padding-bottom: 31.25%;
             background-color: rgba(9, 28, 122, 0.6);
         }
 
@@ -63,10 +65,11 @@
 
     // 从设计到维护全流程数字化
     .section_shuzih {
-        width: 100%;
+        width: $g-width;
         height: 860px;
         background: #FFFFFF;
-        overflow: hidden;
+        margin: 0 auto;
+        padding-top: 1px;
 
         .section_shuzih_title {
             position: relative;
@@ -86,7 +89,7 @@
         .item_list_top {
             position: relative;
             margin: 99px auto 0 auto;
-            width: 1260px;
+            width: 1125px;
             height: 228px;
             z-index: 3;
             display: flex;
@@ -173,7 +176,7 @@
         }
 
         .item_list_center {
-            width: 1545px;
+            width: 100%;
             height: 10px;
             background: #3366FF;
             position: relative;
@@ -232,7 +235,7 @@
         .item_list_bottom {
             position: relative;
             margin: 47px auto 0 auto;
-            width: 742px;
+            width: 675px;
             height: 236px;
             display: flex;
             justify-content: space-between;
@@ -319,7 +322,7 @@
         overflow: hidden;
 
         .section_sanweicj_title {
-            width: 150px;
+            text-align: center;
             font-size: 36px;
             line-height: 36px;
             color: #101426;
@@ -333,7 +336,7 @@
         }
 
         .section_sanweicj_item_list {
-            width: 1200px;
+            width: $g-width;
             height: 496px;
             margin: 84px auto 0 auto;
             display: flex;
@@ -390,7 +393,7 @@
         }
 
         .section_pingguyc_video {
-            width: 1000px;
+            width: $g-width;
             height: 565.5px;
             margin: 81px auto 0 auto;
             background-color: rgba(226, 226, 226, 1);

@@ -6,10 +6,11 @@
     // 数据中台
     .section_shujuzt {
         width: 100%;
-        height: 600px;
+        height: 0;
+        padding-bottom: 31.25%;
         color: #ffffff;
         background: url('@/assets/img/shujuzt/shujuzt-unsplash.jpg') no-repeat center center;
-        background-size: 1903px 100%;
+        background-size: 100% 100%;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -19,7 +20,8 @@
             content: ' ';
             position: absolute;
             width: 100%;
-            height: 600px;
+            height: 0;
+            padding-bottom: 31.25%;
             background-color: rgba(9, 28, 122, 0.7);
         }
 
@@ -88,9 +90,10 @@
         width: 100%;
         height: 505px;
         background: #FFFFFF;
+        overflow: hidden;
 
         .item_list {
-            width: 1180px;
+            width: $g-width;
             height: 100%;
             overflow: hidden;
             margin: 80px auto 0 auto;
@@ -198,7 +201,7 @@
         }
 
         .section_zhongtainl_list {
-            width: 1365px;
+            width: $g-width;
             height: 359px;
             margin: 101px auto 0 auto;
             display: flex;
@@ -277,6 +280,7 @@
         width: 100%;
         height: 1024px;
         background: #FFFFFF;
+        overflow: hidden;
 
         .section_kaiyuandsj_title {
             margin-top: 80px;
@@ -294,7 +298,7 @@
 
         .section_kaiyuandsj_top {
             position: relative;
-            width: 1365px;
+            width: $g-width;
             height: 506px;
             margin: 70px auto 0 auto;
 
@@ -315,7 +319,7 @@
             }
 
             .top_center {
-                width: 1289px;
+                width: 1269px;
                 height: 100%;
                 position: absolute;
                 right: 0px;
@@ -342,7 +346,7 @@
                     }
 
                     .item_body {
-                        width: 1038px;
+                        width: 1005px;
                         height: 100%;
                         background: rgba(217, 228, 255, 0.23);
                         border-radius: 13px;
@@ -939,7 +943,7 @@
         }
 
         .section_kaiyuandsj_center {
-            width: 1365px;
+            width: $g-width;
             height: 50px;
             background: rgba(217, 228, 255, 0.23);
             border: 1px solid rgba(89, 139, 255, 0.23);
@@ -953,7 +957,7 @@
         }
 
         .section_kaiyuandsj_bottom {
-            width: 1365px;
+            width: $g-width;
             height: 140px;
             color: #3994F0;
             text-align: center;
@@ -973,7 +977,7 @@
             }
 
             .bottom_center {
-                width: 630px;
+                width: 622px;
                 height: 140px;
                 background: rgba(217, 228, 255, 0.23);
                 border-radius: 13px;
@@ -1043,7 +1047,7 @@
             }
 
             .bottom_right {
-                width: 630px;
+                width: 622px;
                 height: 140px;
                 background: rgba(217, 228, 255, 0.23);
                 border-radius: 13px;
@@ -1052,7 +1056,7 @@
                 right: 0px;
 
                 .top {
-                    width: 609px;
+                    width: 590px;
                     height: 76px;
                     padding-left: 15px;
                     display: flex;
