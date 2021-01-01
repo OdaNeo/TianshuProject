@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="renderer" content="webkit" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <!-- 加载header组件 -->
-    <%= require('raw-loader!../../raw/header.html').default %>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="renderer" content="webkit" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <!-- 加载header组件 -->
+  <%= require('raw-loader!../../raw/header.html').default %>
     <main id="ts_main_amos">
       <section class="section_amos">
         <h3 class="section_amos_title sr-animate">AMOS</h3>
@@ -74,5 +78,6 @@
     </main>
     <!-- 加载footer组件 -->
     <%= require('raw-loader!../../raw/footer.html').default %>
-  </body>
+</body>
+
 </html>

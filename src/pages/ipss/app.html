@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="renderer" content="webkit" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <!-- 加载header组件 -->
-    <%= require('raw-loader!../../raw/header.html').default %>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="renderer" content="webkit" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <!-- 加载header组件 -->
+  <%= require('raw-loader!../../raw/header.html').default %>
     <main id="ts_main_ipss">
       <!-- ipss -->
       <section class="section_ipss">
@@ -83,12 +87,16 @@
               <div class="con1_right_btn">……</div>
             </section>
             <section class="nav_container_item nav_container_2">
-              <div class="con2_img"><div></div></div>
+              <div class="con2_img">
+                <div></div>
+              </div>
               <div class="con2_text1">可远程通过打电话或者移动端进行问询，C-IPSS系统包含机器人客服中心为乘客解疑答惑。</div>
               <div class="con2_text2">车站设有流动行走的问询机器人，可与你互动回答你提的问题。比如如何案件，如何去往直梯，如何购票等。</div>
             </section>
             <section class="nav_container_item nav_container_3">
-              <div class="con3_left"><div></div></div>
+              <div class="con3_left">
+                <div></div>
+              </div>
               <div class="con3_text_1">可获知上下行的方向</div>
               <div class="con3_text_2">显示到站时间</div>
               <div class="con3_text_3">可以通过下拉框选择<br />上车站点</div>
@@ -122,5 +130,6 @@
     </main>
     <!-- 加载footer组件 -->
     <%= require('raw-loader!../../raw/footer.html').default %>
-  </body>
+</body>
+
 </html>
