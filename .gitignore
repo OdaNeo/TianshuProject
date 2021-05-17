@@ -1,5 +1,7 @@
 .DS_Store
+dist
 /node_modules
+
 
 .firebase
 firebase.json
@@ -8,8 +10,6 @@ firebase.json
 .env.local
 .env.*.local
 
-.idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj
