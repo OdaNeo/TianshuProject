@@ -1,18 +1,27 @@
 /* window dpi 缩放适配 */
-@media all and (min--moz-device-pixel-ratio: 1) and (max--moz-device-pixel-ratio: 1.05), (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 1.05), (min-resolution: 1dppx) and (max-resolution: 1.05dppx) {
+@media screen and (max-width: 960px) {
     html {
-        font-size: 100PX !important;
+        font-size: 50PX !important;
     }
 }
 
-@media all and (min--moz-device-pixel-ratio: 1.06) and (max--moz-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.06) and (-webkit-max-device-pixel-ratio: 1.1), (min-resolution: 1.06dppx) and (max-resolution: 1.1dppx) {
+// 1.5
+@media screen and (min-width: 960px) and (max-width: 1367px) {
     html {
-        font-size: 91PX !important;
+        font-size: 66.7PX !important;
     }
 }
 
-@media all and (min--moz-device-pixel-ratio: 1.11) and (max--moz-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.11) and (-webkit-max-device-pixel-ratio: 1.25), (min-resolution: 1.11dppx) and (max-resolution: 1.25dppx) {
+// 1.25
+@media screen and (min-width: 1367px) and (max-width: 1904px) {
     html {
         font-size: 80PX !important;
+    }
+}
+
+// 1
+@media screen and (min-width: 1904px) {
+    html {
+        font-size: 100PX !important;
     }
 }

@@ -2,26 +2,23 @@ const path = require('path')
 const resolve = dir => path.resolve(__dirname, dir)
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
-
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin') // inline runtime to html，to reduce http-request
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 从js中提取css
-
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin') // cssnano
-
 const TerserJSPlugin = require('terser-webpack-plugin') // 压缩js代码
 
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
-
+// const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 // const CompressionPlugin = require('compression-webpack-plugin') // gzip
 
 module.exports = merge(common, {
   mode: 'production', // 防止控制台报错
   output: {
     // 多出口 prod环境下启用contenthash
-    filename: 'js/[name]_[hash:8].js',
+    filename: 'js/[name]_[contenthash:8].bundle.js', // output path, [name]_[-hash] from prod environment
+    chunkFilename: 'js/[name]_[contenthash:8].chunk.js', // chunkFilename for no-enter chunk-file
     path: resolve('dist'),
-    publicPath: '/'
+    publicPath: ''
   },
   optimization: {
     minimizer: [
@@ -38,10 +35,11 @@ module.exports = merge(common, {
       }),
       new OptimizeCssAssetsPlugin({
         cssProcessorPluginOptions: {
-          preset: ['default'] // 默认移除css注释
+          preset: ['default', { discardComments: { removeAll: true } }] // cssnano
         }
       })
     ],
+    runtimeChunk: true, // html.js cache
     splitChunks: {
       chunks: 'all', // 异步模块和入口模块
       minSize: 30000,
@@ -55,7 +53,7 @@ module.exports = merge(common, {
           minChunks: 1,
           priority: 20 // 权重
         },
-        default: {
+        utils: {
           name: 'utils',
           test: /\\src\\utils\\/,
           minChunks: 1,
@@ -68,7 +66,11 @@ module.exports = merge(common, {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name]_[contenthash:8].css' // prod启用contenthash
+      filename: 'css/[name]_[contenthash:8].css', // prod contenthash
+      chunkFilename: 'css/[name]_[contenthash:8].chunk.css'
+    }),
+    new ScriptExtHtmlWebpackPlugin({
+      inline: /runtime~.*\.js/ // inline runtimeChunk to html
     })
     // new CompressionPlugin({
     //   test: /\.(js|css)$/i,
@@ -80,12 +82,17 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.(css|styl)$/, // css-loader
-        exclude: [/dist/],
+        include: [/node_modules/, /src/],
         use: [
           {
             loader: MiniCssExtractPlugin.loader
           },
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2 // setups number of loaders applied before CSS loader, enable to import tailwind-css-file from tailwind-css-file
+            }
+          },
           {
             loader: 'postcss-loader',
             options: {
@@ -104,58 +111,58 @@ module.exports = merge(common, {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        exclude: [/node_modules/, /dist/],
+        test: /\.(png|jpe?g|gif|svg)$/,
+        include: /\\src\\/,
         use: [
           {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              outputPath: 'img',
-              name: '[name]_[hash:8].[ext]'
+              outputPath: '/img/',
+              name: '[name]_[contenthash:8].[ext]'
               // publicPath: '../img'
             }
           },
           {
-            loader: ImageMinimizerPlugin.loader,
+            loader: 'image-webpack-loader',
             options: {
-              minimizerOptions: {
-                plugins: [
-                  ['mozjpeg', { progressive: true, quality: 50 }],
-                  ['pngquant', { quality: [0.65, 0.75], speed: 4 }],
-                  [
-                    'imagemin-svgo',
-                    {
-                      plugins: [
-                        {
-                          removeViewBox: false
-                        }
-                      ]
-                    }
-                  ]
-                ]
+              mozjpeg: {
+                progressive: true
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              webp: {
+                quality: 75
+              },
+              imageminSvgo: {
+                plugins: [{ removeViewBox: false }]
               }
             }
           }
-          // {
-          //   loader: 'image-webpack-loader',
-          //   options: {
-          //     mozjpeg: {
-          //       progressive: true,
-          //       quality: 75
-          //     },
-          //     optipng: {
-          //       enabled: false
-          //     },
-          //     pngquant: {
-          //       quality: [0.65, 0.9],
-          //       speed: 4
-          //     },
-          //     imageminSvgo: {
-          //       plugins: [{ removeViewBox: false }]
-          //     }
-          //   }
-          // }
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        include: /\\src\\/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              outputPath: '/css/font/',
+              name: '[name].[ext]'
+              // publicPath: '../css/font'
+            }
+          }
         ]
       },
       {

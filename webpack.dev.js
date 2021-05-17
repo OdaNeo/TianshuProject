@@ -1,47 +1,48 @@
 const path = require('path')
 const resolve = dir => path.resolve(__dirname, dir)
-
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
 const webpack = require('webpack')
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
 module.exports = merge(common, {
   mode: 'development',
   output: {
-    // 多出口 dev环境下不启用hash
-    filename: 'js/[name].js',
-    // chunkFilename: 'js/[id]js', // 默认启用 NamedModulesPlugin，不使用id
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    path: resolve('dist'), // default
+    publicPath: ''
   },
   devtool: 'eval-cheap-module-source-map',
   devServer: {
-    // host: '192.168.59.192',
-    port: 7863,
+    contentBase: './dist',
+    port: 5050,
     open: true,
     hot: true
   },
+  stats: 'errors-only', // friendly-errors-webpack-plugin
   plugins: [
-    new webpack.HotModuleReplacementPlugin() // HMR
+    new webpack.HotModuleReplacementPlugin(), // HMR
+    new FriendlyErrorsWebpackPlugin()
   ],
-  optimization: {
-    namedModules: true // 替代 NamedModulesPlugin，固定moduleId，开发环境默认启用
-  },
   module: {
     rules: [
       {
         test: /\.(css|styl)$/, // css-loader
-        exclude: resolve('dist'),
+        include: [/node_modules/, /src/],
         use: [
           'style-loader',
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2 // setups number of loaders applied before CSS loader
+            }
+          },
           {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
                 plugins: [
                   require('postcss-px2rem')({
-                    remUnit: 100, // 50px = 1rem
+                    remUnit: 100, // 100px = 1rem
                     remPrecision: 2
                   })
                 ]
@@ -52,15 +53,26 @@ module.exports = merge(common, {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        exclude: [/node_modules/, /dist/],
+        test: /\.(png|jpe?g|gif|svg)$/,
+        include: /\\src\\/,
         use: [
           {
             loader: 'url-loader',
             options: {
-              outputPath: 'img',
               limit: 8192,
-              name: '[path]_[name].[ext]'
+              name: '[path][name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        include: /\\src\\/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
             }
           }
         ]

@@ -1,5 +1,3 @@
-import 'normalize.css/normalize.css' // 抹平浏览器差异
-
 import '@/styles/ipss.styl' // 页面样式引入
 
 import '@/utils/index.js' // 公共方法引入
@@ -7,13 +5,9 @@ import '@/utils/index.js' // 公共方法引入
 // 导航栏动画
 
 const navBar = document.querySelector('.nav_bar')
-
 const navBarItem = navBar.querySelectorAll('.nav_bar_item') // 导航栏按钮队列
-
 const navBarBg = navBar.querySelector('.nav_bar_bg') // transition动画
-
 const navContainer = document.querySelector('.nav_container')
-
 const navContainerItem = navContainer.querySelectorAll('.nav_container_item')
 
 const TRANSITION_TIME = 500

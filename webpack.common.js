@@ -1,7 +1,6 @@
 const path = require('path')
 const resolve = dir => path.resolve(__dirname, dir)
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 const glob = require('glob') // glob 动态生成entry与html模板
 const pagesName = glob.sync('src/pages/*') // [ 'src/pages/index', 'src/pages/page1', 'src/pages/page2' ]
 const entryFile = {}
@@ -28,8 +27,5 @@ module.exports = {
       '@': resolve('src') // 配置别名
     }
   },
-  plugins: htmlFile,
-  module: {
-    rules: []
-  }
+  plugins: htmlFile
 }
